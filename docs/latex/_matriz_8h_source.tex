@@ -1,0 +1,76 @@
+\doxysection{Matriz.\+h}
+\hypertarget{_matriz_8h_source}{}\label{_matriz_8h_source}\index{include/Matriz/Matriz.h@{include/Matriz/Matriz.h}}
+\mbox{\hyperlink{_matriz_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MATRIZ\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MATRIZ\_H}}
+\DoxyCodeLine{00014\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ \ \ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ Importante\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ \ \ \ \ \ \ \ -\/>\ \ Crea\ la\ clase\ Fraccion\ para\ las\ operaciones\ **}}
+\DoxyCodeLine{00017\ \textcolor{comment}{}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ \ \ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ Tareas\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ \ \ \ Orden,\ se\ representara\ con\ (numero)\ despues\ de\ la\ tarea}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ \ \ \ \ \ \ \ -\/>\ \ Determinante\ \ \ \ (1)\ \ \ \ \ Importante\ para\ otras\ tareas}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ \ \ \ \ \ \ \ -\/>\ \ Suma\ de\ matrices\ \ \ \ (2)}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ \ \ \ \ \ \ \ -\/>\ \ Resta\ de\ matrices\ \ \ (3)}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ \ \ \ \ \ \ \ -\/>\ \ Multiplicacion\ de\ matrices\ \ (4)}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ \ \ \ \ \ \ \ -\/>\ \ Multiplicar\ por\ escalar\ (5)}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ \ \ \ \ \ \ \ -\/>\ \ Division\ de\ matrices\ ??\ (6)}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ \ \ \ \ \ \ \ -\/>\ \ (Extra)\ Agregar\ fracciones\ si\ es\ posible,\ crear\ clase,\ etc.\ **}}
+\DoxyCodeLine{00027\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_fraccion_8h}{Fraccion/Fraccion.h}}"{}}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_matriz}{Matriz}}\{}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ std::vector<std::vector<Fraccion>>\ vector;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ verificarIgualdad(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_matriz}{Matriz}}\&\ vec)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ verificarPosibleMultiplicacion(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_matriz}{Matriz}}\&\ vec)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ integridadMatriz()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ verificarCuadradoMatriz(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_matriz}{Matriz}}\&\ vec)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ mCofactor(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_matriz}{Matriz}}\&\ vec,\ \textcolor{keywordtype}{int}\ imatriz,\ \textcolor{keywordtype}{int}\ jmatriz)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{public}:\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_matriz_a7de756301bddbc4b0b5d2a0f2b1fc695}{Matriz}}()\{\}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_matriz_a7de756301bddbc4b0b5d2a0f2b1fc695}{Matriz}}(\textcolor{keyword}{const}\ std::vector<std::vector<Fraccion>>\&\ vector);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_matriz_a7895b33e46154449bb90e366f39ced3e}{setVector}}(\textcolor{keyword}{const}\ std::vector<std::vector<Fraccion>>\&\ vector)\{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{this}\ -\/>\ vector\ =\ vector;}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::vector<Fraccion>>\&\ \mbox{\hyperlink{class_matriz_aeb11c4eb1c448dfc0417c35af40faac8}{getVector}}()\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this}\ -\/>\ vector;}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_matriz}{Matriz}}\ \mbox{\hyperlink{class_matriz_aa19b6f4a6beab485d555ce11417e2917}{operator\ +}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_matriz}{Matriz}}\&\ vec)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_matriz}{Matriz}}\ \mbox{\hyperlink{class_matriz_a12157f7129528f16f46285f931acd292}{operator\ -\/}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_matriz}{Matriz}}\&\ vec)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_matriz}{Matriz}}\ \mbox{\hyperlink{class_matriz_a7f623415db7f57538db0b0181884a16d}{operator\ *}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_matriz}{Matriz}}\&\ vec)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_matriz}{Matriz}}\ \mbox{\hyperlink{class_matriz_a7f623415db7f57538db0b0181884a16d}{operator\ *}}(\textcolor{keywordtype}{int}\ escalar)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_matriz}{Matriz}}\ \mbox{\hyperlink{class_matriz_a3f1b39e952d826b0e215aad99f962c0f}{operator\ /}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_matriz}{Matriz}}\&\ vec)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_matriz_afab269ce9cabd6cc789d8d2862760322}{determinante}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_matriz}{Matriz}}\&\ vec)\ \textcolor{keyword}{const};\ \textcolor{comment}{/*\ Determinante\ del\ vector\ para\ implementación\ */}}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_matriz}{Matriz}}\ \mbox{\hyperlink{class_matriz_a27cc0bfaf413e791f7e91d6ddfcffab1}{inversa}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{class_matriz_a803f8a49351dcf86acfb8a0bacc455c2}{operator\ <<}}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_matriz}{Matriz}}\&\ vec);}
+\DoxyCodeLine{00188\ \};}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \textcolor{preprocessor}{\#endif\ MATRIZ\_H}}
+
+\end{DoxyCode}

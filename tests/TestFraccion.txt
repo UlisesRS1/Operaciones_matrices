@@ -1,0 +1,116 @@
+#include<iostream>
+#include "Fraccion/Fraccion.h"
+
+/*
+    --------------------- Tests ---------------------
+        #   Sobrecargas Fraccion Fraccion ***
+        ->  Uso de la sobrecarga de << **
+        ->  Uso de la sobrecarga de + **
+        ->  Uso de la sobrecarga de - **
+        ->  Uso de la sobrecarga de * **
+        ->  Uso de la sobrecarga de / **
+        
+        #   Sobrecargas Fraccion Entero ***
+        ->  Uso de la sobrecarga de << **
+        ->  Uso de la sobrecarga de + **
+        ->  Uso de la sobrecarga de - **
+        ->  Uso de la sobrecarga de * **
+        ->  Uso de la sobrecarga de / **
+
+    #Notas
+        - No hubo algun inconveniente en las operaciones
+        Completado 100%
+*/
+
+int main(){
+    //  Objeto fraccion
+    Fraccion frac(1, 3);
+    
+    //  Imprecio con sobrecarga <<
+    std::cout<< "-- Impresion de informacion --" << std::endl;
+    std::cout<< frac << std::endl;
+
+    /* ---------- Fraccion con fraccion ---------- */
+    // Prueba de la sobrecarga del operador + ---------------
+    Fraccion frac1(2, 4);
+    Fraccion frac2(4, 7);
+
+    Fraccion res_suma = frac1 + frac2;
+    std::cout << "-- Resultado de la suma --" << std::endl;
+    std::cout << res_suma << std::endl;
+
+    // Prueba de la sobrecarga del operador - ----------------
+    Fraccion frac3(4, 5);
+    Fraccion frac4(1, 5);
+
+    Fraccion res_resta = frac3 - frac4;
+    std::cout << "-- Resultado de la resta --" << std::endl;
+    std::cout << res_resta << std::endl;
+
+    // Prueba de la sobrecarga del operador / ----------------
+    Fraccion frac5(4, 5);
+    Fraccion frac6(1, 5);
+
+    Fraccion res_div = frac5 / frac6;
+    std::cout << "-- Resultado de la division --" << std::endl;
+    std::cout << res_div << std::endl;
+    
+    // Prueba de la sobrecarga del operador * ----------------
+    Fraccion frac7(4, 5);
+    Fraccion frac8(1, 5);
+
+    Fraccion res_mul = frac7 * frac8;
+    std::cout << "-- Resultado de la multiplicacion --" << std::endl;
+    std::cout << res_mul << std::endl;
+
+    /* ---------- Fraccion con entero ---------- */
+    // Prueba de la sobrecarga del operador + ---------------
+    // frac1 = 2 / 4
+    int entero = 12;
+
+    Fraccion res_suma_entero = frac1 + entero;
+    std::cout << "-- Resultado de la suma --" << std::endl;
+    std::cout << res_suma_entero << std::endl;
+
+    // Prueba de la sobrecarga del operador - ---------------
+    // frac1 = 2 / 4
+    entero = 10;
+
+    Fraccion res_resta_entero = frac1 - entero;
+    std::cout << "-- Resultado de la resta --" << std::endl;
+    std::cout << res_resta_entero << std::endl;
+
+    // Prueba de la sobrecarga del operador * ---------------
+    // frac1 = 2 / 4
+    entero = 5;
+
+    Fraccion res_mul_entero = frac1 * entero;
+    std::cout << "-- Resultado de la multiplicacion --" << std::endl;
+    std::cout << res_mul_entero << std::endl;
+
+    // Prueba de la sobrecarga del operador / ---------------
+    // frac1 = 2 / 4
+    entero = 5;
+
+    Fraccion res_div_entero = frac1 / entero;
+    std::cout << "-- Resultado de la division --" << std::endl;
+    std::cout << res_div_entero << std::endl;
+
+    //  Prueba de nuevas implementaciones de la version 0.3
+    Fraccion textoFrac_den1(4, 1);
+    std::cout << "-- Fraccion con denominador = 1 --" << std::endl;
+    std::cout << textoFrac_den1 << std::endl;
+
+    //  Prueba de nuevas implementacion de numeros negativos en la fraccion
+    //  En numerador
+    Fraccion textoFracNegativaNum(-1, 4);
+    std::cout << "-- Fraccion con numerador = -1 --" << std::endl;
+    std::cout << textoFracNegativaNum << std::endl; 
+
+    //  En denominador
+    Fraccion textoFracNegativaDen(1, -4);
+    std::cout << "-- Fraccion con denominador = -4 --" << std::endl;
+    std::cout << textoFracNegativaDen << std::endl;
+
+    return 0;
+}

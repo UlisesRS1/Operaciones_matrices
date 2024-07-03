@@ -1,0 +1,16 @@
+#include "Fraccion/Fraccion.h"
+#include<iostream>
+
+int main(){
+    //  Dos fracciones para su suma continua
+    Fraccion first(1, -3);
+    Fraccion second(4, 1);
+
+    Fraccion sum;
+    
+    for(int i = 0; i < 2; i++){
+        sum = sum + (first * second);
+        std::cout << "i: " << i << std::endl;
+        std::cout << "sum: " << sum << std::endl;
+    }
+}
