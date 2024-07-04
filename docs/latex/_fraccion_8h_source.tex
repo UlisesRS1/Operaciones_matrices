@@ -70,49 +70,53 @@
 \DoxyCodeLine{00173\ }
 \DoxyCodeLine{00180\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a0b5dc2242292b3d9dd8e0e4b71f9084f}{operator\ /}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00181\ }
-\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{class_fraccion_adc8c72dc8ad5f4bd19a5f1d60b5ba668}{operator\ <<}}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac);}
-\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00190\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a8443aaef386a959121d7853cfca3b5c6}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00191\ }
-\DoxyCodeLine{00192\ \};}
-\DoxyCodeLine{00193\ }
-\DoxyCodeLine{00194\ \textcolor{preprocessor}{\#endif\ FRACCION\_H}}
-\DoxyCodeLine{00195\ }
-\DoxyCodeLine{00196\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00197\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ Notas\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00198\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00199\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/-\/\ Estructura\ Básica\ para\ Sobrecargar\ Operadores\ -\/-\/}}
-\DoxyCodeLine{00200\ \textcolor{comment}{\ \ \ \ En\ C++,\ los\ operadores\ se\ sobrecargan\ utilizando\ funciones\ miembro\ o\ funciones\ amigas.\ }}
-\DoxyCodeLine{00201\ \textcolor{comment}{\ \ \ \ La\ estructura\ básica\ para\ sobrecargar\ un\ operador\ es\ la\ siguiente:}}
-\DoxyCodeLine{00202\ \textcolor{comment}{}}
-\DoxyCodeLine{00203\ \textcolor{comment}{\ \ \ \ cpp}}
-\DoxyCodeLine{00204\ \textcolor{comment}{\ \ \ \ tipo\_retorno\ operatorop(const\ tipo\&\ operando)\ \{}}
-\DoxyCodeLine{00205\ \textcolor{comment}{\ \ \ \ \ \ \ \ //\ Implementación\ de\ la\ operación}}
-\DoxyCodeLine{00206\ \textcolor{comment}{\ \ \ \ \ \ \ \ //\ Puedes\ acceder\ a\ los\ miembros\ de\ la\ clase\ y\ a\ los\ miembros\ de\ operando}}
-\DoxyCodeLine{00207\ \textcolor{comment}{\ \ \ \ \ \ \ \ //\ Devuelve\ el\ resultado\ deseado}}
-\DoxyCodeLine{00208\ \textcolor{comment}{\ \ \ \ \}}}
-\DoxyCodeLine{00209\ \textcolor{comment}{\ \ \ \ Donde:}}
-\DoxyCodeLine{00210\ \textcolor{comment}{\ \ \ \ operatorop\ es\ el\ operador\ que\ deseas\ sobrecargar\ (por\ ejemplo,\ +,\ -\/,\ *,\ /,\ <<,\ >>,\ etc.).}}
-\DoxyCodeLine{00211\ \textcolor{comment}{\ \ \ \ tipo\_retorno\ es\ el\ tipo\ de\ dato\ que\ devuelve\ la\ operación.}}
-\DoxyCodeLine{00212\ \textcolor{comment}{\ \ \ \ tipo\ es\ el\ tipo\ de\ dato\ del\ operando\ con\ el\ que\ estás\ trabajando.}}
-\DoxyCodeLine{00213\ \textcolor{comment}{}}
-\DoxyCodeLine{00214\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/-\/-\/\ Sobrecarga\ del\ operador\ <<\ -\/-\/-\/}}
-\DoxyCodeLine{00215\ \textcolor{comment}{\ \ \ \ En\ C++,\ cuando\ sobrecargas\ el\ operador\ <<\ para\ una\ clase,\ lo\ haces\ generalmente\ como\ una\ }}
-\DoxyCodeLine{00216\ \textcolor{comment}{\ \ \ \ función\ amiga\ (friend\ function)\ de\ esa\ clase.\ Esto\ tiene\ varias\ razones\ y\ beneficios:}}
-\DoxyCodeLine{00217\ \textcolor{comment}{}}
-\DoxyCodeLine{00218\ \textcolor{comment}{\ \ \ \ -\/>\ \ Acceso\ a\ miembros\ privados:\ Como\ el\ operador\ <<\ necesita\ acceder\ a\ los\ miembros\ privados\ }}
-\DoxyCodeLine{00219\ \textcolor{comment}{\ \ \ \ \ \ \ \ de\ la\ clase\ Fraccion\ para\ imprimirlos,\ se\ declara\ como\ amiga\ para\ tener\ acceso\ directo\ a\ }}
-\DoxyCodeLine{00220\ \textcolor{comment}{\ \ \ \ \ \ \ \ estos\ miembros,\ incluso\ si\ son\ privados.}}
-\DoxyCodeLine{00221\ \textcolor{comment}{}}
-\DoxyCodeLine{00222\ \textcolor{comment}{\ \ \ \ -\/>\ \ Flujo\ de\ salida\ (ostream):\ El\ operador\ <<\ está\ definido\ para\ trabajar\ con\ objetos\ que\ son\ }}
-\DoxyCodeLine{00223\ \textcolor{comment}{\ \ \ \ \ \ \ \ capaces\ de\ realizar\ operaciones\ de\ salida,\ representados\ por\ std::ostream.\ Esta\ clase\ }}
-\DoxyCodeLine{00224\ \textcolor{comment}{\ \ \ \ \ \ \ \ proporciona\ operaciones\ de\ salida\ comunes\ como\ operator<<\ para\ escribir\ datos\ en\ diversos\ }}
-\DoxyCodeLine{00225\ \textcolor{comment}{\ \ \ \ \ \ \ \ destinos\ (como\ la\ consola,\ archivos,\ etc.).}}
-\DoxyCodeLine{00226\ \textcolor{comment}{}}
-\DoxyCodeLine{00227\ \textcolor{comment}{\ \ \ \ -\/>\ \ Referencia\ constante\ a\ Fraccion:\ El\ segundo\ parámetro\ de\ la\ función\ sobrecargada\ operator<<\ }}
-\DoxyCodeLine{00228\ \textcolor{comment}{\ \ \ \ \ \ \ \ es\ una\ referencia\ constante\ const\ Fraccion\&\ frac.\ Esta\ referencia\ constante\ asegura\ que\ el\ }}
-\DoxyCodeLine{00229\ \textcolor{comment}{\ \ \ \ \ \ \ \ objeto\ frac\ pasado\ como\ argumento\ no\ se\ modificará\ dentro\ de\ la\ función\ operator<<.}}
-\DoxyCodeLine{00230\ \textcolor{comment}{}}
-\DoxyCodeLine{00231\ \textcolor{comment}{\ \ \ \ -\/>\ \ std::ostream\&\ operator<<(std::ostream\&\ os,\ const\ Fraccion\&\ frac)\ //\ Estructura}}
-\DoxyCodeLine{00232\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00200\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a8443aaef386a959121d7853cfca3b5c6}{operator==}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00209\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{class_fraccion_adc8c72dc8ad5f4bd19a5f1d60b5ba668}{operator\ <<}}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac);}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00212\ \};}
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00214\ \textcolor{preprocessor}{\#endif\ FRACCION\_H}}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00217\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ Notas\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00218\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00219\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/-\/\ Estructura\ Básica\ para\ Sobrecargar\ Operadores\ -\/-\/}}
+\DoxyCodeLine{00220\ \textcolor{comment}{\ \ \ \ En\ C++,\ los\ operadores\ se\ sobrecargan\ utilizando\ funciones\ miembro\ o\ funciones\ amigas.\ }}
+\DoxyCodeLine{00221\ \textcolor{comment}{\ \ \ \ La\ estructura\ básica\ para\ sobrecargar\ un\ operador\ es\ la\ siguiente:}}
+\DoxyCodeLine{00222\ \textcolor{comment}{}}
+\DoxyCodeLine{00223\ \textcolor{comment}{\ \ \ \ cpp}}
+\DoxyCodeLine{00224\ \textcolor{comment}{\ \ \ \ tipo\_retorno\ operatorop(const\ tipo\&\ operando)\ \{}}
+\DoxyCodeLine{00225\ \textcolor{comment}{\ \ \ \ \ \ \ \ //\ Implementación\ de\ la\ operación}}
+\DoxyCodeLine{00226\ \textcolor{comment}{\ \ \ \ \ \ \ \ //\ Puedes\ acceder\ a\ los\ miembros\ de\ la\ clase\ y\ a\ los\ miembros\ de\ operando}}
+\DoxyCodeLine{00227\ \textcolor{comment}{\ \ \ \ \ \ \ \ //\ Devuelve\ el\ resultado\ deseado}}
+\DoxyCodeLine{00228\ \textcolor{comment}{\ \ \ \ \}}}
+\DoxyCodeLine{00229\ \textcolor{comment}{\ \ \ \ Donde:}}
+\DoxyCodeLine{00230\ \textcolor{comment}{\ \ \ \ operatorop\ es\ el\ operador\ que\ deseas\ sobrecargar\ (por\ ejemplo,\ +,\ -\/,\ *,\ /,\ <<,\ >>,\ etc.).}}
+\DoxyCodeLine{00231\ \textcolor{comment}{\ \ \ \ tipo\_retorno\ es\ el\ tipo\ de\ dato\ que\ devuelve\ la\ operación.}}
+\DoxyCodeLine{00232\ \textcolor{comment}{\ \ \ \ tipo\ es\ el\ tipo\ de\ dato\ del\ operando\ con\ el\ que\ estás\ trabajando.}}
+\DoxyCodeLine{00233\ \textcolor{comment}{}}
+\DoxyCodeLine{00234\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/-\/-\/\ Sobrecarga\ del\ operador\ <<\ -\/-\/-\/}}
+\DoxyCodeLine{00235\ \textcolor{comment}{\ \ \ \ En\ C++,\ cuando\ sobrecargas\ el\ operador\ <<\ para\ una\ clase,\ lo\ haces\ generalmente\ como\ una\ }}
+\DoxyCodeLine{00236\ \textcolor{comment}{\ \ \ \ función\ amiga\ (friend\ function)\ de\ esa\ clase.\ Esto\ tiene\ varias\ razones\ y\ beneficios:}}
+\DoxyCodeLine{00237\ \textcolor{comment}{}}
+\DoxyCodeLine{00238\ \textcolor{comment}{\ \ \ \ -\/>\ \ Acceso\ a\ miembros\ privados:\ Como\ el\ operador\ <<\ necesita\ acceder\ a\ los\ miembros\ privados\ }}
+\DoxyCodeLine{00239\ \textcolor{comment}{\ \ \ \ \ \ \ \ de\ la\ clase\ Fraccion\ para\ imprimirlos,\ se\ declara\ como\ amiga\ para\ tener\ acceso\ directo\ a\ }}
+\DoxyCodeLine{00240\ \textcolor{comment}{\ \ \ \ \ \ \ \ estos\ miembros,\ incluso\ si\ son\ privados.}}
+\DoxyCodeLine{00241\ \textcolor{comment}{}}
+\DoxyCodeLine{00242\ \textcolor{comment}{\ \ \ \ -\/>\ \ Flujo\ de\ salida\ (ostream):\ El\ operador\ <<\ está\ definido\ para\ trabajar\ con\ objetos\ que\ son\ }}
+\DoxyCodeLine{00243\ \textcolor{comment}{\ \ \ \ \ \ \ \ capaces\ de\ realizar\ operaciones\ de\ salida,\ representados\ por\ std::ostream.\ Esta\ clase\ }}
+\DoxyCodeLine{00244\ \textcolor{comment}{\ \ \ \ \ \ \ \ proporciona\ operaciones\ de\ salida\ comunes\ como\ operator<<\ para\ escribir\ datos\ en\ diversos\ }}
+\DoxyCodeLine{00245\ \textcolor{comment}{\ \ \ \ \ \ \ \ destinos\ (como\ la\ consola,\ archivos,\ etc.).}}
+\DoxyCodeLine{00246\ \textcolor{comment}{}}
+\DoxyCodeLine{00247\ \textcolor{comment}{\ \ \ \ -\/>\ \ Referencia\ constante\ a\ Fraccion:\ El\ segundo\ parámetro\ de\ la\ función\ sobrecargada\ operator<<\ }}
+\DoxyCodeLine{00248\ \textcolor{comment}{\ \ \ \ \ \ \ \ es\ una\ referencia\ constante\ const\ Fraccion\&\ frac.\ Esta\ referencia\ constante\ asegura\ que\ el\ }}
+\DoxyCodeLine{00249\ \textcolor{comment}{\ \ \ \ \ \ \ \ objeto\ frac\ pasado\ como\ argumento\ no\ se\ modificará\ dentro\ de\ la\ función\ operator<<.}}
+\DoxyCodeLine{00250\ \textcolor{comment}{}}
+\DoxyCodeLine{00251\ \textcolor{comment}{\ \ \ \ -\/>\ \ std::ostream\&\ operator<<(std::ostream\&\ os,\ const\ Fraccion\&\ frac)\ //\ Estructura}}
+\DoxyCodeLine{00252\ \textcolor{comment}{*/}}
 
 \end{DoxyCode}

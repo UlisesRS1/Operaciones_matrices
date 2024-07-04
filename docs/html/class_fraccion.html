@@ -147,6 +147,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acf0b1a8cbaa06b595de09f5d9a9f1375" id="r_acf0b1a8cbaa06b595de09f5d9a9f1375"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_fraccion.html">Fraccion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf0b1a8cbaa06b595de09f5d9a9f1375">operator/</a> (int entero) const</td></tr>
 <tr class="memdesc:acf0b1a8cbaa06b595de09f5d9a9f1375"><td class="mdescLeft">&#160;</td><td class="mdescRight">División de fracción con entero.  <br /></td></tr>
 <tr class="separator:acf0b1a8cbaa06b595de09f5d9a9f1375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8443aaef386a959121d7853cfca3b5c6" id="r_a8443aaef386a959121d7853cfca3b5c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8443aaef386a959121d7853cfca3b5c6">operator==</a> (const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;frac) const</td></tr>
+<tr class="memdesc:a8443aaef386a959121d7853cfca3b5c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarga del operador ==.  <br /></td></tr>
+<tr class="separator:a8443aaef386a959121d7853cfca3b5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ca03e547f66ba4d3e486b9a7ac2c8f" id="r_a99ca03e547f66ba4d3e486b9a7ac2c8f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99ca03e547f66ba4d3e486b9a7ac2c8f">operator==</a> (int entero) const</td></tr>
+<tr class="memdesc:a99ca03e547f66ba4d3e486b9a7ac2c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarda del operador ==.  <br /></td></tr>
+<tr class="separator:a99ca03e547f66ba4d3e486b9a7ac2c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -591,6 +597,74 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a>: Resultado de la division </dd></dl>
+
+</div>
+</div>
+<a id="a8443aaef386a959121d7853cfca3b5c6" name="a8443aaef386a959121d7853cfca3b5c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8443aaef386a959121d7853cfca3b5c6">&#9670;&#160;</a></span>operator==() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Fraccion::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>frac</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sobrecarga del operador ==. </p>
+<p>Devolvera el resultado para la comparación de dos fracciones</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">otra</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: Si las fraciones son iguales </dd>
+<dd>
+false: Si no son iguales </dd></dl>
+
+</div>
+</div>
+<a id="a99ca03e547f66ba4d3e486b9a7ac2c8f" name="a99ca03e547f66ba4d3e486b9a7ac2c8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ca03e547f66ba4d3e486b9a7ac2c8f">&#9670;&#160;</a></span>operator==() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Fraccion::operator== </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>entero</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sobrecarda del operador ==. </p>
+<p>Devolvera el resultado para la comparacion de un fraccion y un entero</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frac</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: Si la fraccion y el entero son iguales </dd>
+<dd>
+false: si lafraccion y el entero no son iguales</dd></dl>
+<p>Devolvera el resultado para la comparacion de un fraccion y un entero</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entero</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: Si la fraccion y el entero son iguales </dd>
+<dd>
+false: si lafraccion y el entero no son iguales </dd></dl>
 
 </div>
 </div>

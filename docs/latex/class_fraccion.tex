@@ -43,7 +43,11 @@ void \mbox{\hyperlink{class_fraccion_a2df74e4f354818062304eb1b1c17f020}{limpiar}
 \mbox{\hyperlink{class_fraccion}{Fraccion}} \mbox{\hyperlink{class_fraccion_a0b5dc2242292b3d9dd8e0e4b71f9084f}{operator/}} (const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&frac) const
 \begin{DoxyCompactList}\small\item\em División de Fracciones. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_fraccion}{Fraccion}} \mbox{\hyperlink{class_fraccion_acf0b1a8cbaa06b595de09f5d9a9f1375}{operator/}} (int entero) const
-\begin{DoxyCompactList}\small\item\em División de fracción con entero. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em División de fracción con entero. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fraccion_a8443aaef386a959121d7853cfca3b5c6}{operator==}} (const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&frac) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador ==. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fraccion_a99ca03e547f66ba4d3e486b9a7ac2c8f}{operator==}} (int entero) const
+\begin{DoxyCompactList}\small\item\em Sobrecarda del operador ==. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -369,6 +373,62 @@ Implementación de la sobrecarga del operador /, con entero.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 \doxylink{class_fraccion}{Fraccion}\+: Resultado de la division 
+\end{DoxyReturn}
+\Hypertarget{class_fraccion_a8443aaef386a959121d7853cfca3b5c6}\index{Fraccion@{Fraccion}!operator==@{operator==}}
+\index{operator==@{operator==}!Fraccion@{Fraccion}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_fraccion_a8443aaef386a959121d7853cfca3b5c6} 
+bool Fraccion\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&}]{frac}{}\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador ==. 
+
+Devolvera el resultado para la comparación de dos fracciones
+
+
+\begin{DoxyParams}{Parameters}
+{\em otra} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\+: Si las fraciones son iguales 
+
+false\+: Si no son iguales 
+\end{DoxyReturn}
+\Hypertarget{class_fraccion_a99ca03e547f66ba4d3e486b9a7ac2c8f}\index{Fraccion@{Fraccion}!operator==@{operator==}}
+\index{operator==@{operator==}!Fraccion@{Fraccion}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_fraccion_a99ca03e547f66ba4d3e486b9a7ac2c8f} 
+bool Fraccion\+::operator== (\begin{DoxyParamCaption}\item[{int}]{entero}{}\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarda del operador ==. 
+
+Devolvera el resultado para la comparacion de un fraccion y un entero
+
+
+\begin{DoxyParams}{Parameters}
+{\em frac} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\+: Si la fraccion y el entero son iguales 
+
+false\+: si lafraccion y el entero no son iguales
+\end{DoxyReturn}
+Devolvera el resultado para la comparacion de un fraccion y un entero
+
+
+\begin{DoxyParams}{Parameters}
+{\em entero} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\+: Si la fraccion y el entero son iguales 
+
+false\+: si lafraccion y el entero no son iguales 
 \end{DoxyReturn}
 \Hypertarget{class_fraccion_a8d952dc4bb7b62c588b5af32d8fc81d6}\index{Fraccion@{Fraccion}!setDenominador@{setDenominador}}
 \index{setDenominador@{setDenominador}!Fraccion@{Fraccion}}

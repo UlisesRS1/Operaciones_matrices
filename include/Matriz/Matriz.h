@@ -173,14 +173,6 @@ class Matriz{
         Matriz operator * (const Fraccion& frac) const; 
 
         /**
-         * @brief Division de matrices
-         * 
-         * @param vec 
-         * @return Matriz: resultado de la división
-         */
-        Matriz operator /(const Matriz& vec) const;
-
-        /**
          * @brief Determinante de la matriz
          *          
          * @return Fraccion: Valor del determinante de la matriz
