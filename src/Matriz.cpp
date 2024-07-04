@@ -414,11 +414,13 @@ Matriz Matriz::operator *(const Fraccion& frac) const {
     * @return Matriz: Cofactor resultante
 */
 Fraccion Matriz::mCofactor(const Matriz& vec, int imatriz, int jmatriz) const{
-    //  Se le resta uno, ya que imatriz y jmatriz son los indices de una matriz representados en matematicas,
-    //  Por lo cual inician en 1, 1 , 1, 2 y así sucesivamente
+    //  En caso de que la matriz sea de 2x2 devolver directamente el resultado
     if(vec.vector.size() == 2){
         return((vec.vector[0][0] * vec.vector[1][1]) - (vec.vector[1][0] * vec.vector[0][1]));
     }
+
+    //  Se le resta uno, ya que imatriz y jmatriz son los indices de una matriz representados en matematicas,
+    //  Por lo cual inician en 1, 1 , 1, 2 y así sucesivamente
 
     imatriz -= 1;
     jmatriz -= 1;
@@ -455,8 +457,6 @@ Fraccion Matriz::mCofactor(const Matriz& vec, int imatriz, int jmatriz) const{
     {
         return ((resultado[0][0] * resultado[1][1]) - (resultado[1][0] * resultado[0][1])) * (static_cast<int>(pow(-1, (imatriz + 1) + (jmatriz + 1))));
     }
-
-    
 
     return determinante(Matriz(resultado)) * (static_cast<int>(pow(-1, (imatriz + 1) + (jmatriz + 1))));
 }
@@ -580,12 +580,6 @@ Matriz Matriz::inversa() const{
 
     return Matriz(trans); 
 }
-
-// Tarea nueva, llevar a cabo la inversa con el método de adjunción
-/*
-    Algoritmo en el siguiente enlace:
-    https://www.superprof.es/apuntes/escolar/matematicas/algebralineal/determinantes/matriz-inversa.html
-*/
 
 /*
     Poco despues se va a actualizar el algoritmo del determinante para su uso mas adelante, pero por el momento,
