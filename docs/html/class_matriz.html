@@ -119,15 +119,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb8402affa05e1bda9aa4a3220f3b75f" id="r_aeb8402affa05e1bda9aa4a3220f3b75f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matriz.html">Matriz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb8402affa05e1bda9aa4a3220f3b75f">operator*</a> (int escalar) const</td></tr>
 <tr class="memdesc:aeb8402affa05e1bda9aa4a3220f3b75f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplicación por escalar.  <br /></td></tr>
 <tr class="separator:aeb8402affa05e1bda9aa4a3220f3b75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f1b39e952d826b0e215aad99f962c0f" id="r_a3f1b39e952d826b0e215aad99f962c0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matriz.html">Matriz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f1b39e952d826b0e215aad99f962c0f">operator/</a> (const <a class="el" href="class_matriz.html">Matriz</a> &amp;vec) const</td></tr>
-<tr class="memdesc:a3f1b39e952d826b0e215aad99f962c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Division de matrices.  <br /></td></tr>
-<tr class="separator:a3f1b39e952d826b0e215aad99f962c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a318e66c1ac79bd629a78118feeec5262" id="r_a318e66c1ac79bd629a78118feeec5262"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matriz.html">Matriz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a318e66c1ac79bd629a78118feeec5262">operator*</a> (const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;frac) const</td></tr>
+<tr class="memdesc:a318e66c1ac79bd629a78118feeec5262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplicacion por un escalar de tipo fracción.  <br /></td></tr>
+<tr class="separator:a318e66c1ac79bd629a78118feeec5262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afab269ce9cabd6cc789d8d2862760322" id="r_afab269ce9cabd6cc789d8d2862760322"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_fraccion.html">Fraccion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afab269ce9cabd6cc789d8d2862760322">determinante</a> (const <a class="el" href="class_matriz.html">Matriz</a> &amp;vec) const</td></tr>
 <tr class="memdesc:afab269ce9cabd6cc789d8d2862760322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determinante de la matriz.  <br /></td></tr>
 <tr class="separator:afab269ce9cabd6cc789d8d2862760322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27cc0bfaf413e791f7e91d6ddfcffab1" id="r_a27cc0bfaf413e791f7e91d6ddfcffab1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matriz.html">Matriz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27cc0bfaf413e791f7e91d6ddfcffab1">inversa</a> () const</td></tr>
 <tr class="memdesc:a27cc0bfaf413e791f7e91d6ddfcffab1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_matriz.html">Matriz</a> inversa de la matriz original.  <br /></td></tr>
 <tr class="separator:a27cc0bfaf413e791f7e91d6ddfcffab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b8d72d1432469b07c03ee9f6c0d9e32" id="r_a0b8d72d1432469b07c03ee9f6c0d9e32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matriz.html">Matriz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b8d72d1432469b07c03ee9f6c0d9e32">transpuesta</a> (const <a class="el" href="class_matriz.html">Matriz</a> &amp;vec) const</td></tr>
+<tr class="memdesc:a0b8d72d1432469b07c03ee9f6c0d9e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devolvera la matriz transpuesta.  <br /></td></tr>
+<tr class="separator:a0b8d72d1432469b07c03ee9f6c0d9e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -238,8 +241,34 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a318e66c1ac79bd629a78118feeec5262" name="a318e66c1ac79bd629a78118feeec5262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a318e66c1ac79bd629a78118feeec5262">&#9670;&#160;</a></span>operator*() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matriz.html">Matriz</a> Matriz::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>frac</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiplicacion por un escalar de tipo fracción. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frac</td><td>Valor del escalar como fracción </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_matriz.html">Matriz</a>: Resultado de la multiplicación </dd></dl>
+
+</div>
+</div>
 <a id="a7f623415db7f57538db0b0181884a16d" name="a7f623415db7f57538db0b0181884a16d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f623415db7f57538db0b0181884a16d">&#9670;&#160;</a></span>operator*() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f623415db7f57538db0b0181884a16d">&#9670;&#160;</a></span>operator*() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +294,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="aeb8402affa05e1bda9aa4a3220f3b75f" name="aeb8402affa05e1bda9aa4a3220f3b75f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb8402affa05e1bda9aa4a3220f3b75f">&#9670;&#160;</a></span>operator*() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb8402affa05e1bda9aa4a3220f3b75f">&#9670;&#160;</a></span>operator*() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,32 +379,6 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a3f1b39e952d826b0e215aad99f962c0f" name="a3f1b39e952d826b0e215aad99f962c0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f1b39e952d826b0e215aad99f962c0f">&#9670;&#160;</a></span>operator/()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_matriz.html">Matriz</a> Matriz::operator/ </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_matriz.html">Matriz</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vec</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Division de matrices. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vec</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_matriz.html">Matriz</a>: resultado de la división </dd></dl>
-
-</div>
-</div>
 <a id="a7895b33e46154449bb90e366f39ced3e" name="a7895b33e46154449bb90e366f39ced3e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7895b33e46154449bb90e366f39ced3e">&#9670;&#160;</a></span>setVector()</h2>
 
@@ -406,6 +409,26 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a0b8d72d1432469b07c03ee9f6c0d9e32" name="a0b8d72d1432469b07c03ee9f6c0d9e32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b8d72d1432469b07c03ee9f6c0d9e32">&#9670;&#160;</a></span>transpuesta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matriz.html">Matriz</a> Matriz::transpuesta </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matriz.html">Matriz</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vec</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Devolvera la matriz transpuesta. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_matriz.html">Matriz</a> </dd></dl>
 
 </div>
 </div>
