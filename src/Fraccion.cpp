@@ -195,6 +195,38 @@ Fraccion Fraccion::operator /(int entero) const{
     return Fraccion(num, den);
 }
 
+/**
+ * @brief Elevara la fraccion al valor que reciba pow; (a/b)^pow 
+ * 
+ * @param pow Valor al que se elevara la fracción
+ * @return Fraccion 
+*/
+Fraccion Fraccion::pow(int pow) const{
+    return Fraccion(std::pow(numerador, pow), std::pow(denominador, pow));
+}
+
+/* 
+                           -- Postulacion de mejora -- 
+    Debido a que la raiz cuadrada puede dar como resultado un numero double,
+    la propuesta es cambiar el tipo de dato que se maneja como numerador y 
+    denominador de la fracción de valores int a valores double para almacenar
+    los datos de manera que se mantenga la mayor fidelidad en cuanto a la raiz
+    cuadrada;
+    
+    Otra opcion es que los valores que no cuenten con una raiz cuadrada perfecta
+    se impriman con un simbolo de radicacion para solo expresar la operación.
+
+*/
+
+/**
+ * @brief Calculara la raiz cuadrada de la fraccion; sqrt()
+ * 
+ * @return Fraccion: Raiz cuadrada de la fraccion
+*/
+Fraccion Fraccion::sqrt() const{
+    return Fraccion(std::sqrt(numerador), std::sqrt(denominador));
+}
+
 
 /**
  * @brief Sobrecarga del operador ==
@@ -295,3 +327,14 @@ std::ostream& operator <<(std::ostream& os, const Fraccion& frac){
     os << ss.str();
     return os;
 }
+
+/*
+    Agregar las siguientes operaciones para la siguiente version de Fraccion
+        -   Potencia de un fraccion
+            --  En este caso se debera de solo pedir el valor del exponente y el metodo se llamara 
+                pow(int pow)
+        -   Radicacion de una fraccion
+            --  Solo radicara con el valor por defecto, es decir, solo se hara la raiz cuadrada, por el momento.
+        -   Operaciones de comparación
+            --  Es decir, terminar de sobrecargar los operadores <, >, !=, <=, >= para su uso en comparaciones
+ */
