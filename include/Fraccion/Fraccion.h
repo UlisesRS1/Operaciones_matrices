@@ -180,6 +180,21 @@ public:
     Fraccion operator /(int entero) const;
 
     /**
+     * @brief Elevara la fraccion al valor que reciba pow; (a/b)^pow 
+     * 
+     * @param pow Valor al que se elevara la fracción
+     * @return Fraccion 
+     */
+    Fraccion pow(int pow) const;
+
+    /**
+     * @brief Calculara la raiz cuadrada de la fraccion; sqrt()
+     * 
+     * @return Fraccion: Raiz cuadrada de la fraccion
+     */
+    Fraccion sqrt() const;
+
+    /**
      * @brief Sobrecarga del operador ==
      * @details Devolvera el resultado para la comparación de dos fracciones 
      * 
@@ -198,6 +213,96 @@ public:
      * @return false: si lafraccion y el entero no son iguales
      */
     bool operator==(int entero) const;
+
+    /**
+     * @brief Sobrecarga del operador !=
+     * 
+     * @param frac 
+     * @return true: Si las fracciones no son iguales 
+     * @return false: Si las fracciones son iguales
+     */
+    bool operator!=(const Fraccion& frac) const;
+
+    /**
+     * @brief Sobrecarga del operador !=
+     * 
+     * @param entero 
+     * @return true: Si la fraccion y el entero no son iguales
+     * @return false: Si la fraccion y el entero son iguales
+     */
+    bool operator!=(int entero) const;
+
+    /**
+     * @brief Sobrecarga del operador <
+     * 
+     * @param frac 
+     * @return true: Si la fraccion es menor que frac
+     * @return false: Si la fraccion no es menor que frac
+     */
+    bool operator<(const Fraccion& frac) const;
+    
+    /**
+     * @brief Sobrecarga del operador <
+     * 
+     * @param entero
+     * @return true: Si la fraccion es menor que el entero
+     * @return false: Si la fraccion no es menor que el entero
+     */
+    bool operator<(int entero) const;
+
+    /**
+     * @brief Sobrecarga del operador >
+     * 
+     * @param frac 
+     * @return true: Si la fraccion es mayor que frac
+     * @return false: Si la fraccion no es mayor que frac
+     */
+    bool operator>(const Fraccion& frac) const;
+    
+    /**
+     * @brief Sobrecarga del operador >
+     * 
+     * @param entero
+     * @return true: Si la fraccion es mayor que el entero
+     * @return false: Si la fraccion no es mayor que el entero
+     */
+    bool operator>(int entero) const;
+
+    /**
+     * @brief Sobrecarga del operador <=
+     * 
+     * @param frac 
+     * @return true: Si la fraccion es menor o igual que frac
+     * @return false: Si la fraccion no es menor o igual que frac
+     */
+    bool operator<=(const Fraccion& frac) const;
+    
+    /**
+     * @brief Sobrecarga del operador <=
+     * 
+     * @param entero 
+     * @return true: Si la fraccion es menor o igual que el entero
+     * @return false: Si la fraccion no es menor o igual que el entero
+     */
+    bool operator<=(int entero) const;
+
+    /**
+     * @brief Sobrecarga del operador >=
+     * 
+     * @param frac 
+     * @return true: Si la fraccion es mayor o igual que frac
+     * @return false: Si la fraccion no es mayor o igual que frac
+     */
+    bool operator>=(const Fraccion& frac) const;
+    
+    /**
+     * @brief Sobrecarga del operador >=
+     * 
+     * @param entero 
+     * @return true: Si la fraccion es mayor o igual que el entero
+     * @return false: Si la fraccion no es mayor o igual que el entero
+     */
+    bool operator>=(int entero) const;
 
     /**
      * @brief Sobrecarda del operador <<
