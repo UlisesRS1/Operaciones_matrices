@@ -166,29 +166,29 @@ src\Matriz.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrices.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Matrices.dir\src\Matriz.cpp.s
 .PHONY : src\Matriz.cpp.s
 
-tests\TestMatriz.obj: tests\TestMatriz.cpp.obj
-.PHONY : tests\TestMatriz.obj
+tests\TestFraccion_06-07-2024.obj: tests\TestFraccion_06-07-2024.cpp.obj
+.PHONY : tests\TestFraccion_06-07-2024.obj
 
 # target to build an object file
-tests\TestMatriz.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrices.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Matrices.dir\tests\TestMatriz.cpp.obj
-.PHONY : tests\TestMatriz.cpp.obj
+tests\TestFraccion_06-07-2024.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrices.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Matrices.dir\tests\TestFraccion_06-07-2024.cpp.obj
+.PHONY : tests\TestFraccion_06-07-2024.cpp.obj
 
-tests\TestMatriz.i: tests\TestMatriz.cpp.i
-.PHONY : tests\TestMatriz.i
+tests\TestFraccion_06-07-2024.i: tests\TestFraccion_06-07-2024.cpp.i
+.PHONY : tests\TestFraccion_06-07-2024.i
 
 # target to preprocess a source file
-tests\TestMatriz.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrices.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Matrices.dir\tests\TestMatriz.cpp.i
-.PHONY : tests\TestMatriz.cpp.i
+tests\TestFraccion_06-07-2024.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrices.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Matrices.dir\tests\TestFraccion_06-07-2024.cpp.i
+.PHONY : tests\TestFraccion_06-07-2024.cpp.i
 
-tests\TestMatriz.s: tests\TestMatriz.cpp.s
-.PHONY : tests\TestMatriz.s
+tests\TestFraccion_06-07-2024.s: tests\TestFraccion_06-07-2024.cpp.s
+.PHONY : tests\TestFraccion_06-07-2024.s
 
 # target to generate assembly for a file
-tests\TestMatriz.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrices.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Matrices.dir\tests\TestMatriz.cpp.s
-.PHONY : tests\TestMatriz.cpp.s
+tests\TestFraccion_06-07-2024.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrices.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Matrices.dir\tests\TestFraccion_06-07-2024.cpp.s
+.PHONY : tests\TestFraccion_06-07-2024.cpp.s
 
 # Help Target
 help:
@@ -205,9 +205,9 @@ help:
 	@echo ... src/Matriz.obj
 	@echo ... src/Matriz.i
 	@echo ... src/Matriz.s
-	@echo ... tests/TestMatriz.obj
-	@echo ... tests/TestMatriz.i
-	@echo ... tests/TestMatriz.s
+	@echo ... tests/TestFraccion_06-07-2024.obj
+	@echo ... tests/TestFraccion_06-07-2024.i
+	@echo ... tests/TestFraccion_06-07-2024.s
 .PHONY : help
 
 

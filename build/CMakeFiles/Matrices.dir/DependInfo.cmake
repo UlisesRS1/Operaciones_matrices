@@ -10,7 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Uli Rodriguez/OneDrive/Documentos/2024/Matrices/src/Fraccion.cpp" "CMakeFiles/Matrices.dir/src/Fraccion.cpp.obj" "msvc" "CMakeFiles/Matrices.dir/src/Fraccion.cpp.obj.d"
   "C:/Users/Uli Rodriguez/OneDrive/Documentos/2024/Matrices/src/Matriz.cpp" "CMakeFiles/Matrices.dir/src/Matriz.cpp.obj" "msvc" "CMakeFiles/Matrices.dir/src/Matriz.cpp.obj.d"
-  "C:/Users/Uli Rodriguez/OneDrive/Documentos/2024/Matrices/tests/TestMatriz.cpp" "CMakeFiles/Matrices.dir/tests/TestMatriz.cpp.obj" "msvc" "CMakeFiles/Matrices.dir/tests/TestMatriz.cpp.obj.d"
+  "C:/Users/Uli Rodriguez/OneDrive/Documentos/2024/Matrices/tests/TestFraccion_06-07-2024.cpp" "CMakeFiles/Matrices.dir/tests/TestFraccion_06-07-2024.cpp.obj" "msvc" "CMakeFiles/Matrices.dir/tests/TestFraccion_06-07-2024.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

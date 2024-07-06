@@ -252,6 +252,116 @@ bool Fraccion::operator==(int entero) const{
     return (numerador * 1) == (denominador * entero);
 }
 
+ /**
+ * @brief Sobrecarga del operador !=
+ * 
+ * @param frac 
+ * @return true: Si las fracciones no son iguales 
+ * @return false: Si las fracciones son iguales
+*/
+bool Fraccion::operator!=(const Fraccion& frac) const{
+    return (numerador * frac.denominador) != (denominador * frac.numerador);
+}
+
+/**
+ * @brief Sobrecarga del operador !=
+ * 
+ * @param entero 
+ * @return true: Si la fraccion y el entero no son iguales
+ * @return false: Si la fraccion y el entero son iguales
+*/
+bool Fraccion::operator!=(int entero) const{
+    return (numerador * 1) != (denominador * entero);
+}
+
+ /**
+ * @brief Sobrecarga del operador <
+ * 
+ * @param frac 
+ * @return true: Si la fraccion es menor que frac
+ * @return false: Si la fraccion no es menor que frac
+*/
+bool Fraccion::operator<(const Fraccion& frac) const{
+    return (static_cast<double>(numerador) / denominador) < (static_cast<double>(frac.numerador) / frac.denominador);
+}
+
+/**
+ * @brief Sobrecarga del operador <
+ * 
+ * @param entero
+ * @return true: Si la fraccion es menor que el entero
+ * @return false: Si la fraccion no es menor que el entero
+*/
+bool Fraccion::operator<(int entero) const{
+    return (static_cast<double>(numerador) / denominador) < (static_cast<double>(entero));
+}
+
+/**
+ * @brief Sobrecarga del operador >
+ * 
+ * @param frac 
+ * @return true: Si la fraccion es mayor que frac
+ * @return false: Si la fraccion no es mayor que frac
+*/
+bool Fraccion::operator>(const Fraccion& frac) const{
+    return (static_cast<double>(numerador) / denominador) > (static_cast<double>(frac.numerador) / frac.denominador);
+}
+    
+/**
+ * @brief Sobrecarga del operador >
+ * 
+ * @param entero
+ * @return true: Si la fraccion es mayor que el entero
+ * @return false: Si la fraccion no es mayor que el entero
+*/
+bool Fraccion::operator>(int entero) const{
+    return (static_cast<double>(numerador) / denominador) > (static_cast<double>(entero));
+}
+
+/**
+ * @brief Sobrecarga del operador <=
+ * 
+ * @param frac 
+ * @return true: Si la fraccion es menor o igual que frac
+ * @return false: Si la fraccion no es menor o igual que frac
+*/
+bool Fraccion::operator<=(const Fraccion& frac) const{
+    return (static_cast<double>(numerador) / denominador) <= (static_cast<double>(frac.numerador) / frac.denominador);
+}
+    
+/**
+ * @brief Sobrecarga del operador <=
+ * 
+ * @param entero 
+ * @return true: Si la fraccion es menor o igual que el entero
+ * @return false: Si la fraccion no es menor o igual que el entero
+*/
+bool Fraccion::operator<=(int entero) const{
+    return (static_cast<double>(numerador) / denominador) <= (static_cast<double>(entero));
+}
+
+/**
+ * @brief Sobrecarga del operador >=
+ * 
+ * @param frac 
+ * @return true: Si la fraccion es mayor o igual que frac
+ * @return false: Si la fraccion no es mayor o igual que frac
+*/
+bool Fraccion::operator>=(const Fraccion& frac) const{
+    return (static_cast<double>(numerador) / denominador) >= (static_cast<double>(frac.numerador) / frac.denominador);
+}
+    
+/**
+ * @brief Sobrecarga del operador >=
+ * 
+ * @param entero 
+ * @return true: Si la fraccion es mayor o igual que el entero
+ * @return false: Si la fraccion no es mayor o igual que el entero
+*/
+bool Fraccion::operator>=(int entero) const{
+    return (static_cast<double>(numerador) / denominador) >= (static_cast<double>(entero));
+}
+
 /**
  * @brief Impresion de Fraccion
  * 
