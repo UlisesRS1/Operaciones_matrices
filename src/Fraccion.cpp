@@ -13,6 +13,9 @@
 #include<numeric>
 #include <sstream>
 #include<cmath>
+#include <algorithm>
+#include <string>
+#include "utils/StringUtils.h"
 
 /**
  * @brief Constructor por defecto que no recibe nada
@@ -25,6 +28,17 @@ Fraccion::Fraccion(){
     this -> numerador = 0;
     this -> denominador = 1;
 }
+
+/**
+ * @brief Implementacion del constructor Fraccion
+ * 
+ * @param numerador 
+ * @param denominador 
+ */
+Fraccion::Fraccion(int numerador, int denominador) 
+: numerador(numerador), denominador(denominador){
+    simplificar();
+} 
 
 /**
  * @brief Establecera el valor por defecto (0 / 1)
@@ -48,15 +62,22 @@ void Fraccion::simplificar(){
     denominador /= mcd;
 }
 
+void Fraccion::setTexttoFraccion(const std::string& fraccion) {
+    std::vector<std::string> valores = StringUtils::split(fraccion, '/');
+
+    this -> numerador = stoi(valores[0]);
+    this -> denominador = stoi(valores[1]);
+}
+
 /**
- * @brief Implementacion del constructor Fraccion
+ * @brief Constructor que recibe un string para la construccion de un objeto Fraccion
+ * @details El formato en string se usa "a/b", por ejemplo, Fraccion("1/4"); 
  * 
- * @param numerador 
- * @param denominador 
- */
-Fraccion::Fraccion(int numerador, int denominador) 
-: numerador(numerador), denominador(denominador){
-    simplificar();
+ * @param fraccion String para separar los numeros del texto.
+*/
+
+Fraccion::Fraccion(const std::string& fraccion){
+    setTexttoFraccion(fraccion);
 } 
 
 /**
@@ -282,7 +303,7 @@ bool Fraccion::operator!=(int entero) const{
  * @return false: Si la fraccion no es menor que frac
 */
 bool Fraccion::operator<(const Fraccion& frac) const{
-    return (static_cast<double>(numerador) / denominador) < (static_cast<double>(frac.numerador) / frac.denominador);
+    return (static_cast<double>(numerador) / static_cast<double>(denominador)) < (static_cast<double>(frac.numerador) / static_cast<double>(frac.denominador));
 }
 
 /**
@@ -293,7 +314,7 @@ bool Fraccion::operator<(const Fraccion& frac) const{
  * @return false: Si la fraccion no es menor que el entero
 */
 bool Fraccion::operator<(int entero) const{
-    return (static_cast<double>(numerador) / denominador) < (static_cast<double>(entero));
+    return (static_cast<double>(numerador) / static_cast<double>(denominador)) < (static_cast<double>(entero));
 }
 
 /**
@@ -304,7 +325,7 @@ bool Fraccion::operator<(int entero) const{
  * @return false: Si la fraccion no es mayor que frac
 */
 bool Fraccion::operator>(const Fraccion& frac) const{
-    return (static_cast<double>(numerador) / denominador) > (static_cast<double>(frac.numerador) / frac.denominador);
+    return (static_cast<double>(numerador) / static_cast<double>(denominador)) > (static_cast<double>(frac.numerador) / static_cast<double>(frac.denominador));
 }
     
 /**
@@ -315,7 +336,7 @@ bool Fraccion::operator>(const Fraccion& frac) const{
  * @return false: Si la fraccion no es mayor que el entero
 */
 bool Fraccion::operator>(int entero) const{
-    return (static_cast<double>(numerador) / denominador) > (static_cast<double>(entero));
+    return (static_cast<double>(numerador) / static_cast<double>(denominador)) > (static_cast<double>(entero));
 }
 
 /**
@@ -326,7 +347,7 @@ bool Fraccion::operator>(int entero) const{
  * @return false: Si la fraccion no es menor o igual que frac
 */
 bool Fraccion::operator<=(const Fraccion& frac) const{
-    return (static_cast<double>(numerador) / denominador) <= (static_cast<double>(frac.numerador) / frac.denominador);
+    return (static_cast<double>(numerador) / static_cast<double>(denominador)) <= (static_cast<double>(frac.numerador) / frac.denominador);
 }
     
 /**
@@ -337,7 +358,7 @@ bool Fraccion::operator<=(const Fraccion& frac) const{
  * @return false: Si la fraccion no es menor o igual que el entero
 */
 bool Fraccion::operator<=(int entero) const{
-    return (static_cast<double>(numerador) / denominador) <= (static_cast<double>(entero));
+    return (static_cast<double>(numerador) / static_cast<double>(denominador)) <= (static_cast<double>(entero));
 }
 
 /**
@@ -348,7 +369,7 @@ bool Fraccion::operator<=(int entero) const{
  * @return false: Si la fraccion no es mayor o igual que frac
 */
 bool Fraccion::operator>=(const Fraccion& frac) const{
-    return (static_cast<double>(numerador) / denominador) >= (static_cast<double>(frac.numerador) / frac.denominador);
+    return (static_cast<double>(numerador) / static_cast<double>(denominador)) >= (static_cast<double>(frac.numerador) / static_cast<double>(frac.denominador));
 }
     
 /**
@@ -359,7 +380,7 @@ bool Fraccion::operator>=(const Fraccion& frac) const{
  * @return false: Si la fraccion no es mayor o igual que el entero
 */
 bool Fraccion::operator>=(int entero) const{
-    return (static_cast<double>(numerador) / denominador) >= (static_cast<double>(entero));
+    return (static_cast<double>(numerador) / static_cast<double>(denominador)) >= (static_cast<double>(entero));
 }
 
 /**

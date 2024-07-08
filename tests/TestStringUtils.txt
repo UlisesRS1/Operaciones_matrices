@@ -1,0 +1,14 @@
+#include<iostream>
+#include<vector>
+#include "utils/StringUtils.h"
+
+int main(){
+    std::string cadena = "1/4";
+
+    std::vector<std::string> split = StringUtils::split(cadena, '/');
+
+    for (size_t i = 0; i < split.size(); i++)
+    {
+        std::cout << "Cadena = " << split[i] << std::endl;
+    }
+}
