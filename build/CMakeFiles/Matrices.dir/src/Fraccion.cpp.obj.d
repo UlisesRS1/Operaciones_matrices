@@ -103,6 +103,9 @@ C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/ctype.h
 C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/clocale
 C:/Program Files (x86)/Windows Kits/10/include/10.0.19041.0/ucrt/locale.h
+C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/vector
 C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/numeric
 C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/sstream
 C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/string
+C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/include/algorithm
+C:/Users/Uli Rodriguez/OneDrive/Documentos/2024/Matrices/include/utils/StringUtils.h

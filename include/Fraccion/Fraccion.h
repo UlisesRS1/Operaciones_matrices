@@ -12,6 +12,7 @@
 #define FRACCION_H
 
 #include<iostream>
+#include<vector>
 
 /*
     ------------------------ Tareas ------------------------
@@ -50,6 +51,13 @@ private:
      */
     void simplificar();
 
+    /**
+     * @brief Set the Text to Fraccion object
+     * 
+     * @param fraccion 
+     */
+    void setTexttoFraccion(const std::string& fraccion);
+
 public:
     /**
      * @brief COnstructor de un nuevo objeto Fraccion vacio
@@ -72,6 +80,14 @@ public:
      * @param frac Fraccion, objeto Fraccion
      */
     Fraccion(const Fraccion& frac) : Fraccion(frac.numerador, frac.denominador) {}
+
+    /**
+     * @brief Constructor que recibe un string para la construccion de un objeto Fraccion
+     * @details El formato en string se usa "a/b", por ejemplo, Fraccion("1/4"); 
+     * 
+     * @param fraccion String para separar los numeros del texto.
+     */
+    Fraccion(const std::string& fraccion);
 
     /**
      * @brief Set el numerador del objeto Fracción
