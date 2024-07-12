@@ -24,6 +24,14 @@
         ->  Imprimir fracción con formato x/y.**
 
         -- De manera general solo falta la implementación
+
+                        Nuevas tarea
+        ->  Creacion de metodos para el manejo de operaciones con mas 
+            tipos de datos con fracciones
+        (Para hacer la libreria un poco más completa)
+        (Aplicara tambien para las operaciones de matrices) 
+        ->  Agragar un metodo que retorne un string en el cual se muestre
+            la fraccion en el fomato "entero a/b".
  */
 
 
@@ -58,9 +66,25 @@ private:
      */
     void setTexttoFraccion(const std::string& fraccion);
 
+    /**
+     * @brief Transforma un valor double a su equivalencia en Fraccion
+     * 
+     * @param flotante 
+     * @return Fraccion 
+     */
+    Fraccion toFraccion(double flotante) const;
+    
+    /**
+     * @brief Transforma un valor float a su equivalencia en Fraccion
+     * 
+     * @param flotante 
+     * @return Fraccion 
+     */
+    Fraccion toFraccion(float flotante) const;
+
 public:
     /**
-     * @brief COnstructor de un nuevo objeto Fraccion vacio
+     * @brief Constructor de un nuevo objeto Fraccion vacio
      * 
      */
     Fraccion();
@@ -148,6 +172,22 @@ public:
     Fraccion operator +(int entero) const;
 
     /**
+     * @brief Suma de fraccion y de un double
+     * 
+     * @param flotante Numero flotante (double)
+     * @return Fraccion: Resultado de la suma
+     */
+    Fraccion operator +(double flotante) const;
+
+    /**
+     * @brief Suma de fraccion y de un float
+     * 
+     * @param flotante Numero flotante (float)
+     * @return Fraccion:  Resultado de la suma
+     */
+    Fraccion operator +(float flotante) const;
+
+    /**
      * @brief Resta de Fracciones
      * 
      * @param frac Objeto Fraccion()
@@ -163,6 +203,22 @@ public:
      */
     Fraccion operator -(int entero) const;
 
+    /**
+     * @brief Resta de fraccion y flotante (double)
+     * 
+     * @param flotante 
+     * @return Fraccion 
+     */
+    Fraccion operator -(double flotante) const;
+
+    /**
+     * @brief Resta de fraccion y de flotante (float)
+     * 
+     * @param flotante 
+     * @return Fraccion 
+     */
+    Fraccion operator -(float flotante) const;
+    
     /**
      * @brief Multiplicación de Fracciones 
      * 
@@ -180,6 +236,22 @@ public:
     Fraccion operator *(int entero) const;
 
     /**
+     * @brief Multiplicación de fracción con double
+     * 
+     * @param flotante Numero flotante (double) 
+     * @return Fraccion: Resultado de la multiplicacion
+     */
+    Fraccion operator *(double flotante) const;
+
+    /**
+     * @brief Multiplicacion de fracción con float
+     * 
+     * @param flotante Numero flotante (float)
+     * @return Fraccion: Resultado de la multiplicacion
+     */
+    Fraccion operator *(float flotante) const;
+
+    /**
      * @brief División de Fracciones
      * 
      * @param frac Objeto Fraccion()
@@ -194,6 +266,22 @@ public:
      * @return Fraccion: Resultado de la division
      */
     Fraccion operator /(int entero) const;
+
+    /**
+     * @brief Division de fraccion con double
+     * 
+     * @param flotante Numero flotante (double)
+     * @return Fraccion: Resultado de la division 
+     */
+    Fraccion operator /(double flotante) const;
+    
+    /**
+     * @brief Division de fraccion con float
+     * 
+     * @param flotante Numero flotante (float)
+     * @return Fraccion: Resultado de la division
+     */
+    Fraccion operator /(float flotante) const;
 
     /**
      * @brief Elevara la fraccion al valor que reciba pow; (a/b)^pow 

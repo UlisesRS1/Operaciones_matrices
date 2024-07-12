@@ -100,7 +100,7 @@ $(function(){ initResizable(false); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a80b8bb475192ceb820428a57e911ceb5" id="r_a80b8bb475192ceb820428a57e911ceb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80b8bb475192ceb820428a57e911ceb5">Fraccion</a> ()</td></tr>
-<tr class="memdesc:a80b8bb475192ceb820428a57e911ceb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">COnstructor de un nuevo objeto <a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a> vacio.  <br /></td></tr>
+<tr class="memdesc:a80b8bb475192ceb820428a57e911ceb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de un nuevo objeto <a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a> vacio.  <br /></td></tr>
 <tr class="separator:a80b8bb475192ceb820428a57e911ceb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f9e2752a686e2508b94f33cbdc9ab15" id="r_a6f9e2752a686e2508b94f33cbdc9ab15"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f9e2752a686e2508b94f33cbdc9ab15">Fraccion</a> (int numerador, int denominador)</td></tr>
 <tr class="memdesc:a6f9e2752a686e2508b94f33cbdc9ab15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de un nuevo objeto <a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a> con numerador y denominador.  <br /></td></tr>
@@ -108,6 +108,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6184e9ab624221ddb9b18b5f7a35602c" id="r_a6184e9ab624221ddb9b18b5f7a35602c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6184e9ab624221ddb9b18b5f7a35602c">Fraccion</a> (const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;frac)</td></tr>
 <tr class="memdesc:a6184e9ab624221ddb9b18b5f7a35602c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de un nuevo objeto <a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a> con un objeto <a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a>.  <br /></td></tr>
 <tr class="separator:a6184e9ab624221ddb9b18b5f7a35602c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e54336bbcceb48761b37e321efef8fc" id="r_a8e54336bbcceb48761b37e321efef8fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e54336bbcceb48761b37e321efef8fc">Fraccion</a> (const std::string &amp;fraccion)</td></tr>
+<tr class="memdesc:a8e54336bbcceb48761b37e321efef8fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor que recibe un string para la construccion de un objeto <a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a>.  <br /></td></tr>
+<tr class="separator:a8e54336bbcceb48761b37e321efef8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab05f42515f4fab353d4e5b5c37b9083f" id="r_ab05f42515f4fab353d4e5b5c37b9083f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab05f42515f4fab353d4e5b5c37b9083f">setNumerador</a> (int n)</td></tr>
 <tr class="memdesc:ab05f42515f4fab353d4e5b5c37b9083f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set el numerador del objeto Fracción.  <br /></td></tr>
 <tr class="separator:ab05f42515f4fab353d4e5b5c37b9083f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,12 +150,48 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acf0b1a8cbaa06b595de09f5d9a9f1375" id="r_acf0b1a8cbaa06b595de09f5d9a9f1375"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_fraccion.html">Fraccion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf0b1a8cbaa06b595de09f5d9a9f1375">operator/</a> (int entero) const</td></tr>
 <tr class="memdesc:acf0b1a8cbaa06b595de09f5d9a9f1375"><td class="mdescLeft">&#160;</td><td class="mdescRight">División de fracción con entero.  <br /></td></tr>
 <tr class="separator:acf0b1a8cbaa06b595de09f5d9a9f1375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc82905ddcca466ad128a91a28721e99" id="r_abc82905ddcca466ad128a91a28721e99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_fraccion.html">Fraccion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc82905ddcca466ad128a91a28721e99">pow</a> (int pow) const</td></tr>
+<tr class="memdesc:abc82905ddcca466ad128a91a28721e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elevara la fraccion al valor que reciba pow; (a/b)^pow.  <br /></td></tr>
+<tr class="separator:abc82905ddcca466ad128a91a28721e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ced8a4a01e5d55a871720ad0fe9fe3f" id="r_a0ced8a4a01e5d55a871720ad0fe9fe3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_fraccion.html">Fraccion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ced8a4a01e5d55a871720ad0fe9fe3f">sqrt</a> () const</td></tr>
+<tr class="memdesc:a0ced8a4a01e5d55a871720ad0fe9fe3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculara la raiz cuadrada de la fraccion; <a class="el" href="#a0ced8a4a01e5d55a871720ad0fe9fe3f" title="Calculara la raiz cuadrada de la fraccion; sqrt()">sqrt()</a>  <br /></td></tr>
+<tr class="separator:a0ced8a4a01e5d55a871720ad0fe9fe3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8443aaef386a959121d7853cfca3b5c6" id="r_a8443aaef386a959121d7853cfca3b5c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8443aaef386a959121d7853cfca3b5c6">operator==</a> (const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;frac) const</td></tr>
 <tr class="memdesc:a8443aaef386a959121d7853cfca3b5c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarga del operador ==.  <br /></td></tr>
 <tr class="separator:a8443aaef386a959121d7853cfca3b5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99ca03e547f66ba4d3e486b9a7ac2c8f" id="r_a99ca03e547f66ba4d3e486b9a7ac2c8f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99ca03e547f66ba4d3e486b9a7ac2c8f">operator==</a> (int entero) const</td></tr>
 <tr class="memdesc:a99ca03e547f66ba4d3e486b9a7ac2c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarda del operador ==.  <br /></td></tr>
 <tr class="separator:a99ca03e547f66ba4d3e486b9a7ac2c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c82778df77bda0ade27f2479f93073" id="r_a15c82778df77bda0ade27f2479f93073"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15c82778df77bda0ade27f2479f93073">operator!=</a> (const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;frac) const</td></tr>
+<tr class="memdesc:a15c82778df77bda0ade27f2479f93073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarga del operador !=.  <br /></td></tr>
+<tr class="separator:a15c82778df77bda0ade27f2479f93073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee15df94f96b0c41c4ca149cceca9de" id="r_a0ee15df94f96b0c41c4ca149cceca9de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ee15df94f96b0c41c4ca149cceca9de">operator!=</a> (int entero) const</td></tr>
+<tr class="memdesc:a0ee15df94f96b0c41c4ca149cceca9de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarga del operador !=.  <br /></td></tr>
+<tr class="separator:a0ee15df94f96b0c41c4ca149cceca9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a725550abf93052cba741b9f6c36593ac" id="r_a725550abf93052cba741b9f6c36593ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a725550abf93052cba741b9f6c36593ac">operator&lt;</a> (const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;frac) const</td></tr>
+<tr class="memdesc:a725550abf93052cba741b9f6c36593ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarga del operador &lt;.  <br /></td></tr>
+<tr class="separator:a725550abf93052cba741b9f6c36593ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34df7cd5f7f32047d60aa5b0173ff46" id="r_ab34df7cd5f7f32047d60aa5b0173ff46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab34df7cd5f7f32047d60aa5b0173ff46">operator&lt;</a> (int entero) const</td></tr>
+<tr class="memdesc:ab34df7cd5f7f32047d60aa5b0173ff46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarga del operador &lt;.  <br /></td></tr>
+<tr class="separator:ab34df7cd5f7f32047d60aa5b0173ff46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac40897cadcd5353d9c91a15ec972d27" id="r_aac40897cadcd5353d9c91a15ec972d27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac40897cadcd5353d9c91a15ec972d27">operator&gt;</a> (const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;frac) const</td></tr>
+<tr class="memdesc:aac40897cadcd5353d9c91a15ec972d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarga del operador &gt;  <br /></td></tr>
+<tr class="separator:aac40897cadcd5353d9c91a15ec972d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb030a3f7f6d8a99e0f06b83898f857a" id="r_adb030a3f7f6d8a99e0f06b83898f857a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb030a3f7f6d8a99e0f06b83898f857a">operator&gt;</a> (int entero) const</td></tr>
+<tr class="memdesc:adb030a3f7f6d8a99e0f06b83898f857a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarga del operador &gt;  <br /></td></tr>
+<tr class="separator:adb030a3f7f6d8a99e0f06b83898f857a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5244a8eabdf82c175a0d62598cfe399c" id="r_a5244a8eabdf82c175a0d62598cfe399c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5244a8eabdf82c175a0d62598cfe399c">operator&lt;=</a> (const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;frac) const</td></tr>
+<tr class="memdesc:a5244a8eabdf82c175a0d62598cfe399c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarga del operador &lt;=.  <br /></td></tr>
+<tr class="separator:a5244a8eabdf82c175a0d62598cfe399c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78747120d842024ba80fe0386000cad7" id="r_a78747120d842024ba80fe0386000cad7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78747120d842024ba80fe0386000cad7">operator&lt;=</a> (int entero) const</td></tr>
+<tr class="memdesc:a78747120d842024ba80fe0386000cad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarga del operador &lt;=.  <br /></td></tr>
+<tr class="separator:a78747120d842024ba80fe0386000cad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6c557e5865b11136fa24b941826d4c" id="r_abc6c557e5865b11136fa24b941826d4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc6c557e5865b11136fa24b941826d4c">operator&gt;=</a> (const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;frac) const</td></tr>
+<tr class="memdesc:abc6c557e5865b11136fa24b941826d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarga del operador &gt;=.  <br /></td></tr>
+<tr class="separator:abc6c557e5865b11136fa24b941826d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad40ef0ee65b6d61afd4449b1cab98d8c" id="r_ad40ef0ee65b6d61afd4449b1cab98d8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad40ef0ee65b6d61afd4449b1cab98d8c">operator&gt;=</a> (int entero) const</td></tr>
+<tr class="memdesc:ad40ef0ee65b6d61afd4449b1cab98d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sobrecarga del operador &gt;=.  <br /></td></tr>
+<tr class="separator:ad40ef0ee65b6d61afd4449b1cab98d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -164,7 +203,7 @@ Friends</h2></td></tr>
 <div class="textblock"><p>Clase para el uso de fracciones. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a80b8bb475192ceb820428a57e911ceb5" name="a80b8bb475192ceb820428a57e911ceb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80b8bb475192ceb820428a57e911ceb5">&#9670;&#160;</a></span>Fraccion() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b8bb475192ceb820428a57e911ceb5">&#9670;&#160;</a></span>Fraccion() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,14 +217,14 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>COnstructor de un nuevo objeto <a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a> vacio. </p>
+<p>Constructor de un nuevo objeto <a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a> vacio. </p>
 <p>Constructor por defecto que no recibe nada.</p>
 <p>La fraccion por defecto es 0 / 1 </p>
 
 </div>
 </div>
 <a id="a6f9e2752a686e2508b94f33cbdc9ab15" name="a6f9e2752a686e2508b94f33cbdc9ab15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f9e2752a686e2508b94f33cbdc9ab15">&#9670;&#160;</a></span>Fraccion() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f9e2752a686e2508b94f33cbdc9ab15">&#9670;&#160;</a></span>Fraccion() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +257,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a6184e9ab624221ddb9b18b5f7a35602c" name="a6184e9ab624221ddb9b18b5f7a35602c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6184e9ab624221ddb9b18b5f7a35602c">&#9670;&#160;</a></span>Fraccion() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6184e9ab624221ddb9b18b5f7a35602c">&#9670;&#160;</a></span>Fraccion() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,6 +284,32 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">frac</td><td><a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a>, objeto <a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8e54336bbcceb48761b37e321efef8fc" name="a8e54336bbcceb48761b37e321efef8fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e54336bbcceb48761b37e321efef8fc">&#9670;&#160;</a></span>Fraccion() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Fraccion::Fraccion </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>fraccion</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor que recibe un string para la construccion de un objeto <a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a>. </p>
+<p>El formato en string se usa "a/b", por ejemplo, <a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a>("1/4");</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fraccion</td><td>String para separar los numeros del texto. </td></tr>
   </table>
   </dd>
 </dl>
@@ -328,6 +393,62 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a15c82778df77bda0ade27f2479f93073" name="a15c82778df77bda0ade27f2479f93073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15c82778df77bda0ade27f2479f93073">&#9670;&#160;</a></span>operator!=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Fraccion::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>frac</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sobrecarga del operador !=. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frac</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: Si las fracciones no son iguales </dd>
+<dd>
+false: Si las fracciones son iguales </dd></dl>
+
+</div>
+</div>
+<a id="a0ee15df94f96b0c41c4ca149cceca9de" name="a0ee15df94f96b0c41c4ca149cceca9de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ee15df94f96b0c41c4ca149cceca9de">&#9670;&#160;</a></span>operator!=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Fraccion::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>entero</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sobrecarga del operador !=. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entero</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: Si la fraccion y el entero no son iguales </dd>
+<dd>
+false: Si la fraccion y el entero son iguales </dd></dl>
+
+</div>
+</div>
 <a id="a040a5a2d549271cd3670af65bdc55110" name="a040a5a2d549271cd3670af65bdc55110"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a040a5a2d549271cd3670af65bdc55110">&#9670;&#160;</a></span>operator*() <span class="overload">[1/2]</span></h2>
 
@@ -347,7 +468,7 @@ Friends</h2></td></tr>
 <p>Implementación de la sobrecarga del operador *.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frac</td><td>Objeto <a class="el" href="#a80b8bb475192ceb820428a57e911ceb5" title="COnstructor de un nuevo objeto Fraccion vacio.">Fraccion()</a> </td></tr>
+    <tr><td class="paramname">frac</td><td>Objeto <a class="el" href="#a80b8bb475192ceb820428a57e911ceb5" title="Constructor de un nuevo objeto Fraccion vacio.">Fraccion()</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -415,7 +536,7 @@ Friends</h2></td></tr>
 <p>Implementación de la sobrecarga del operador +.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frac</td><td>Objeto <a class="el" href="#a80b8bb475192ceb820428a57e911ceb5" title="COnstructor de un nuevo objeto Fraccion vacio.">Fraccion()</a> </td></tr>
+    <tr><td class="paramname">frac</td><td>Objeto <a class="el" href="#a80b8bb475192ceb820428a57e911ceb5" title="Constructor de un nuevo objeto Fraccion vacio.">Fraccion()</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -483,7 +604,7 @@ Friends</h2></td></tr>
 <p>Implementación de la sobrecarga del operador -.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frac</td><td>Objeto <a class="el" href="#a80b8bb475192ceb820428a57e911ceb5" title="COnstructor de un nuevo objeto Fraccion vacio.">Fraccion()</a> </td></tr>
+    <tr><td class="paramname">frac</td><td>Objeto <a class="el" href="#a80b8bb475192ceb820428a57e911ceb5" title="Constructor de un nuevo objeto Fraccion vacio.">Fraccion()</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -551,7 +672,7 @@ Friends</h2></td></tr>
 <p>Implementación de la sobrecarga del operador /.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frac</td><td>Objeto <a class="el" href="#a80b8bb475192ceb820428a57e911ceb5" title="COnstructor de un nuevo objeto Fraccion vacio.">Fraccion()</a> </td></tr>
+    <tr><td class="paramname">frac</td><td>Objeto <a class="el" href="#a80b8bb475192ceb820428a57e911ceb5" title="Constructor de un nuevo objeto Fraccion vacio.">Fraccion()</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -597,6 +718,118 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a>: Resultado de la division </dd></dl>
+
+</div>
+</div>
+<a id="a725550abf93052cba741b9f6c36593ac" name="a725550abf93052cba741b9f6c36593ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a725550abf93052cba741b9f6c36593ac">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Fraccion::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>frac</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sobrecarga del operador &lt;. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frac</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: Si la fraccion es menor que frac </dd>
+<dd>
+false: Si la fraccion no es menor que frac </dd></dl>
+
+</div>
+</div>
+<a id="ab34df7cd5f7f32047d60aa5b0173ff46" name="ab34df7cd5f7f32047d60aa5b0173ff46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab34df7cd5f7f32047d60aa5b0173ff46">&#9670;&#160;</a></span>operator&lt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Fraccion::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>entero</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sobrecarga del operador &lt;. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entero</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: Si la fraccion es menor que el entero </dd>
+<dd>
+false: Si la fraccion no es menor que el entero </dd></dl>
+
+</div>
+</div>
+<a id="a5244a8eabdf82c175a0d62598cfe399c" name="a5244a8eabdf82c175a0d62598cfe399c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5244a8eabdf82c175a0d62598cfe399c">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Fraccion::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>frac</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sobrecarga del operador &lt;=. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frac</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: Si la fraccion es menor o igual que frac </dd>
+<dd>
+false: Si la fraccion no es menor o igual que frac </dd></dl>
+
+</div>
+</div>
+<a id="a78747120d842024ba80fe0386000cad7" name="a78747120d842024ba80fe0386000cad7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78747120d842024ba80fe0386000cad7">&#9670;&#160;</a></span>operator&lt;=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Fraccion::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>entero</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sobrecarga del operador &lt;=. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entero</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: Si la fraccion es menor o igual que el entero </dd>
+<dd>
+false: Si la fraccion no es menor o igual que el entero </dd></dl>
 
 </div>
 </div>
@@ -668,6 +901,144 @@ false: si lafraccion y el entero no son iguales </dd></dl>
 
 </div>
 </div>
+<a id="aac40897cadcd5353d9c91a15ec972d27" name="aac40897cadcd5353d9c91a15ec972d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac40897cadcd5353d9c91a15ec972d27">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Fraccion::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>frac</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sobrecarga del operador &gt; </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frac</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: Si la fraccion es mayor que frac </dd>
+<dd>
+false: Si la fraccion no es mayor que frac </dd></dl>
+
+</div>
+</div>
+<a id="adb030a3f7f6d8a99e0f06b83898f857a" name="adb030a3f7f6d8a99e0f06b83898f857a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb030a3f7f6d8a99e0f06b83898f857a">&#9670;&#160;</a></span>operator&gt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Fraccion::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>entero</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sobrecarga del operador &gt; </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entero</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: Si la fraccion es mayor que el entero </dd>
+<dd>
+false: Si la fraccion no es mayor que el entero </dd></dl>
+
+</div>
+</div>
+<a id="abc6c557e5865b11136fa24b941826d4c" name="abc6c557e5865b11136fa24b941826d4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6c557e5865b11136fa24b941826d4c">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Fraccion::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_fraccion.html">Fraccion</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>frac</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sobrecarga del operador &gt;=. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frac</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: Si la fraccion es mayor o igual que frac </dd>
+<dd>
+false: Si la fraccion no es mayor o igual que frac </dd></dl>
+
+</div>
+</div>
+<a id="ad40ef0ee65b6d61afd4449b1cab98d8c" name="ad40ef0ee65b6d61afd4449b1cab98d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad40ef0ee65b6d61afd4449b1cab98d8c">&#9670;&#160;</a></span>operator&gt;=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Fraccion::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>entero</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sobrecarga del operador &gt;=. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entero</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: Si la fraccion es mayor o igual que el entero </dd>
+<dd>
+false: Si la fraccion no es mayor o igual que el entero </dd></dl>
+
+</div>
+</div>
+<a id="abc82905ddcca466ad128a91a28721e99" name="abc82905ddcca466ad128a91a28721e99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc82905ddcca466ad128a91a28721e99">&#9670;&#160;</a></span>pow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_fraccion.html">Fraccion</a> Fraccion::pow </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>pow</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Elevara la fraccion al valor que reciba pow; (a/b)^pow. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pow</td><td>Valor al que se elevara la fracción </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a> </dd></dl>
+
+</div>
+</div>
 <a id="a8d952dc4bb7b62c588b5af32d8fc81d6" name="a8d952dc4bb7b62c588b5af32d8fc81d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d952dc4bb7b62c588b5af32d8fc81d6">&#9670;&#160;</a></span>setDenominador()</h2>
 
@@ -731,6 +1102,26 @@ false: si lafraccion y el entero no son iguales </dd></dl>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a0ced8a4a01e5d55a871720ad0fe9fe3f" name="a0ced8a4a01e5d55a871720ad0fe9fe3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ced8a4a01e5d55a871720ad0fe9fe3f">&#9670;&#160;</a></span>sqrt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_fraccion.html">Fraccion</a> Fraccion::sqrt </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculara la raiz cuadrada de la fraccion; <a class="el" href="#a0ced8a4a01e5d55a871720ad0fe9fe3f" title="Calculara la raiz cuadrada de la fraccion; sqrt()">sqrt()</a> </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_fraccion.html" title="Clase para el uso de fracciones.">Fraccion</a>: Raiz cuadrada de la fraccion </dd></dl>
 
 </div>
 </div>

@@ -81,9 +81,64 @@ Fraccion::Fraccion(const std::string& fraccion){
 } 
 
 /**
+ * @brief Transforma un valor double a su equivalencia en Fraccion
+ * 
+ * @param flotante 
+ * @return Fraccion 
+*/
+Fraccion Fraccion::toFraccion(double flotante) const{
+    //  Variables para la trata del double
+    std::string fl = std::to_string(flotante);
+    std::string resultado;
+
+    //  Numerador y denominador
+    int numerador;
+    int denominador;
+
+    //  Split del double convertido en texto
+    std::vector<std::string> split = StringUtils::split(fl, '.');
+    
+    //  Quitando el punto decimal y juntando el split
+    resultado = split[0] + split[1];
+
+    numerador = std::stoi(resultado);
+    denominador = static_cast<int>(std::pow(10, split[1].length()));
+
+    //  Devolver la fracción
+    return Fraccion(numerador, denominador);
+}
+
+/**
+ * @brief Transforma un valor float a su equivalencia en Fraccion
+ * 
+ * @param flotante 
+ * @return Fraccion 
+*/
+Fraccion Fraccion::toFraccion(float flotante) const{
+    std::string fl = std::to_string(flotante);
+    std::string resultado;
+
+    //  Numerador y denominador
+    int numerador;
+    int denominador;
+
+    //  Split del double convertido en texto
+    std::vector<std::string> split = StringUtils::split(fl, '.');
+    
+    //  Quitando el punto decimal y juntando el split
+    resultado = split[0] + split[1];
+
+    numerador = std::stoi(resultado);
+    denominador = static_cast<int>(std::pow(10, split[1].length()));
+
+    //  Devolver la fracción
+    return Fraccion(numerador, denominador);
+}
+
+/**
  * @brief Implementación de la sobrecarga del operador +
  * 
- * @param frac 
+ * @param frac Fraccion
  * @return Fraccion: Resultado de la suma 
  */
 Fraccion Fraccion::operator+(const Fraccion& frac) const{
@@ -115,9 +170,37 @@ Fraccion Fraccion::operator + (int entero) const{
 }
 
 /**
+ * @brief Implementacion de la sobre cargar del operador +, con double
+ * 
+ * @param flotante double
+ * @return Fraccion: Resultado de la suma
+ */
+Fraccion Fraccion::operator+(double flotante) const{
+    //  Fracciones para la suma
+    Fraccion frac(numerador, denominador);
+    Fraccion flot = toFraccion(flotante);
+
+    return frac + flot; 
+}  
+
+/**
+ * @brief Implementacion de la sobre cargar del operador +, con float
+ * 
+ * @param flotante float
+ * @return Fraccion:  Resultado de la suma
+*/
+Fraccion Fraccion::operator +(float flotante) const{
+    //  Fracciones para la suma
+    Fraccion frac(numerador, denominador);
+    Fraccion flot = toFraccion(flotante);
+
+    return frac + flot; 
+}
+
+/**
  * @brief Implementación de la sobrecarga del operador -
  * 
- * @param frac 
+ * @param frac Fraccion
  * @return Fraccion: Resultado de la resta 
  */
 Fraccion Fraccion::operator -(const Fraccion& frac) const{
@@ -134,7 +217,7 @@ Fraccion Fraccion::operator -(const Fraccion& frac) const{
 /**
  * @brief Implementación de la sobrecarga del operador -, con entero
  * 
- * @param entero 
+ * @param entero int
  * @return Fraccion: Resultado de la resta
  */
 Fraccion Fraccion::operator -(int entero) const{
@@ -149,9 +232,35 @@ Fraccion Fraccion::operator -(int entero) const{
 }
 
 /**
+ * @brief Implementación de la sobrecarga del operador -, con double
+ * 
+ * @param flotante double
+ * @return Fraccion: Resultado de la resta
+ */
+Fraccion Fraccion::operator -(double flotante) const{
+    Fraccion frac(numerador, denominador);
+    Fraccion flot = toFraccion(flotante);
+
+    return frac - flot; 
+}
+
+/**
+ * @brief Implementación de la sobrecarga del operador -, con float
+ * 
+ * @param flotante float
+ * @return Fraccion: Resultado de la resta
+ */
+Fraccion Fraccion::operator -(float flotante) const{
+    Fraccion frac(numerador, denominador);
+    Fraccion flot = toFraccion(flotante);
+
+    return frac - flot; 
+}
+
+/**
  * @brief Implementación de la sobrecarga del operador *
  * 
- * @param frac 
+ * @param frac Fraccion
  * @return Fraccion: Resultado de la multiplicacion
  */
 Fraccion Fraccion::operator *(const Fraccion& frac) const{
@@ -168,7 +277,7 @@ Fraccion Fraccion::operator *(const Fraccion& frac) const{
 /**
  * @brief Implementación de la sobrecarga del operador *, con entero
  * 
- * @param entero 
+ * @param entero int
  * @return Fraccion: Resultado de la multiplicacion
  */
 Fraccion Fraccion::operator *(int entero) const{
@@ -183,9 +292,35 @@ Fraccion Fraccion::operator *(int entero) const{
 }
 
 /**
+ * @brief Implementación de la sobrecarga del operador *, con double
+ * 
+ * @param flotante double
+ * @return Fraccion: Resultado de la multiplicacion
+ */
+Fraccion Fraccion::operator*(double flotante) const{
+    Fraccion frac(numerador, denominador);
+    Fraccion flot = toFraccion(flotante);
+
+    return frac * flot; 
+}
+
+/**
+ * @brief Implementación de la sobrecarga del operador *, con float
+ * 
+ * @param flotante float
+ * @return Fraccion: Resultado de la multiplicacion
+ */
+Fraccion Fraccion::operator*(float flotante) const{
+    Fraccion frac(numerador, denominador);
+    Fraccion flot = toFraccion(flotante);
+
+    return frac * flot; 
+}
+
+/**
  * @brief Implementación de la sobrecarga del operador /
  * 
- * @param frac 
+ * @param frac Fraccion
  * @return Fraccion: Resultado de la division
  */
 Fraccion Fraccion::operator /(const Fraccion& frac) const{
@@ -202,7 +337,7 @@ Fraccion Fraccion::operator /(const Fraccion& frac) const{
 /**
  * @brief Implementación de la sobrecarga del operador /, con entero
  * 
- * @param entero 
+ * @param entero int
  * @return Fraccion: Resultado de la division
  */
 Fraccion Fraccion::operator /(int entero) const{
@@ -214,6 +349,32 @@ Fraccion Fraccion::operator /(int entero) const{
     
     //  Retornar un objeto Fracción 
     return Fraccion(num, den);
+}
+
+/**
+ * @brief Implementación de la sobrecarga del operador /, con double
+ * 
+ * @param flotante double
+ * @return Fraccion: Resultado de la division
+ */
+Fraccion Fraccion::operator/(double flotante) const{
+    Fraccion frac(numerador, denominador);
+    Fraccion flot = toFraccion(flotante);
+
+    return frac / flot; 
+}
+
+/**
+ * @brief Implementación de la sobrecarga del operador /, con float
+ * 
+ * @param flotante float
+ * @return Fraccion: Resultado de la division
+ */
+Fraccion Fraccion::operator/(float flotante) const{
+    Fraccion frac(numerador, denominador);
+    Fraccion flot = toFraccion(flotante);
+
+    return frac / flot; 
 }
 
 /**
