@@ -1,0 +1,21 @@
+#include<iostream>
+#include "Fraccion/Fraccion.h"
+
+int main(){
+    //  Prueba de suma de un double y una fraccion
+    Fraccion frac(1, 2);    
+    double dou = 2.25;
+
+    //  La respuesta debe de ser 5/2
+    Fraccion resultado = frac + dou;
+
+    std::cout << "Resultado = " << resultado << std::endl; 
+
+    //  sumaremos .5 a dou
+    dou += 0.5;
+
+    //  la respuesta debe ser 3
+    resultado = frac + dou;
+
+    std::cout << "Resultado = " << resultado << std::endl; 
+}

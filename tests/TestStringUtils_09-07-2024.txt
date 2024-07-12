@@ -1,0 +1,46 @@
+#include<iostream>
+#include "utils/StringUtils.h"
+#include "Fraccion/Fraccion.h"
+
+//  Nota =
+/*
+    La presicion con la cual se puede trabajar es de maximo 5 decimales.
+    En caso de que se excedan estos decimales, se truncara y redondeara 
+    el numero y se dara un resultado aproximado al resultado.
+*/
+
+int main(){
+    //  Prueba de transformar double a string y modificar su punto decimal desde este.
+    double fl = 2.00000; 
+    std::string flotante = std::to_string(fl);
+
+    std::cout << "Flotante = " << flotante << std::endl;
+
+    //  Prueba de split para quitar el punto decimal
+    std::string resultado;
+    int numerador;
+    int denominador;
+    std::vector<std::string> split = StringUtils::split(flotante, '.');
+    
+    resultado = split[0] + split[1];
+
+    numerador = std::stoi(resultado);
+    denominador = static_cast<int>(pow(10, split[1].length()));
+
+    std::cout << "Numerador = " << numerador << std::endl;
+    std::cout << "Denominador = " << denominador << std::endl;
+
+    double num = static_cast<double>(numerador);
+    double den = static_cast<double>(denominador);
+
+    std::cout << "num = " << num  << std::endl; 
+    std::cout << "den = " << den << std::endl; 
+
+    std::cout << "Division " << (num / den) << std::endl; 
+
+    Fraccion frac(numerador, denominador);
+
+    std::cout << "Sin punto flotante = " << resultado << std::endl;
+
+    std::cout << "Fraccion = " << frac << std::endl;
+}

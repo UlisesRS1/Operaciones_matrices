@@ -13,11 +13,13 @@ Clase para el uso de fracciones.
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_fraccion_a80b8bb475192ceb820428a57e911ceb5}{Fraccion}} ()
-\begin{DoxyCompactList}\small\item\em COnstructor de un nuevo objeto \doxylink{class_fraccion}{Fraccion} vacio. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructor de un nuevo objeto \doxylink{class_fraccion}{Fraccion} vacio. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_fraccion_a6f9e2752a686e2508b94f33cbdc9ab15}{Fraccion}} (int numerador, int denominador)
 \begin{DoxyCompactList}\small\item\em Constructor de un nuevo objeto \doxylink{class_fraccion}{Fraccion} con numerador y denominador. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_fraccion_a6184e9ab624221ddb9b18b5f7a35602c}{Fraccion}} (const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&frac)
 \begin{DoxyCompactList}\small\item\em Constructor de un nuevo objeto \doxylink{class_fraccion}{Fraccion} con un objeto \doxylink{class_fraccion}{Fraccion}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fraccion_a8e54336bbcceb48761b37e321efef8fc}{Fraccion}} (const std\+::string \&fraccion)
+\begin{DoxyCompactList}\small\item\em Constructor que recibe un string para la construccion de un objeto \doxylink{class_fraccion}{Fraccion}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_fraccion_ab05f42515f4fab353d4e5b5c37b9083f}{set\+Numerador}} (int n)
 \begin{DoxyCompactList}\small\item\em Set el numerador del objeto Fracción. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_fraccion_a2888ab0195106948330e9492d82ca25b}{get\+Numerador}} ()
@@ -44,10 +46,34 @@ void \mbox{\hyperlink{class_fraccion_a2df74e4f354818062304eb1b1c17f020}{limpiar}
 \begin{DoxyCompactList}\small\item\em División de Fracciones. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_fraccion}{Fraccion}} \mbox{\hyperlink{class_fraccion_acf0b1a8cbaa06b595de09f5d9a9f1375}{operator/}} (int entero) const
 \begin{DoxyCompactList}\small\item\em División de fracción con entero. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fraccion}{Fraccion}} \mbox{\hyperlink{class_fraccion_abc82905ddcca466ad128a91a28721e99}{pow}} (int pow) const
+\begin{DoxyCompactList}\small\item\em Elevara la fraccion al valor que reciba pow; (a/b)\texorpdfstring{$^\wedge$}{\string^}pow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fraccion}{Fraccion}} \mbox{\hyperlink{class_fraccion_a0ced8a4a01e5d55a871720ad0fe9fe3f}{sqrt}} () const
+\begin{DoxyCompactList}\small\item\em Calculara la raiz cuadrada de la fraccion; \doxylink{class_fraccion_a0ced8a4a01e5d55a871720ad0fe9fe3f}{sqrt()} \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_fraccion_a8443aaef386a959121d7853cfca3b5c6}{operator==}} (const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&frac) const
 \begin{DoxyCompactList}\small\item\em Sobrecarga del operador ==. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_fraccion_a99ca03e547f66ba4d3e486b9a7ac2c8f}{operator==}} (int entero) const
-\begin{DoxyCompactList}\small\item\em Sobrecarda del operador ==. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sobrecarda del operador ==. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fraccion_a15c82778df77bda0ade27f2479f93073}{operator!=}} (const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&frac) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador !=. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fraccion_a0ee15df94f96b0c41c4ca149cceca9de}{operator!=}} (int entero) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador !=. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fraccion_a725550abf93052cba741b9f6c36593ac}{operator$<$}} (const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&frac) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador \texorpdfstring{$<$}{<}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fraccion_ab34df7cd5f7f32047d60aa5b0173ff46}{operator$<$}} (int entero) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador \texorpdfstring{$<$}{<}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fraccion_aac40897cadcd5353d9c91a15ec972d27}{operator$>$}} (const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&frac) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador \texorpdfstring{$>$}{>} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fraccion_adb030a3f7f6d8a99e0f06b83898f857a}{operator$>$}} (int entero) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador \texorpdfstring{$>$}{>} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fraccion_a5244a8eabdf82c175a0d62598cfe399c}{operator$<$=}} (const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&frac) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador \texorpdfstring{$<$}{<}=. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fraccion_a78747120d842024ba80fe0386000cad7}{operator$<$=}} (int entero) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador \texorpdfstring{$<$}{<}=. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fraccion_abc6c557e5865b11136fa24b941826d4c}{operator$>$=}} (const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&frac) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador \texorpdfstring{$>$}{>}=. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fraccion_ad40ef0ee65b6d61afd4449b1cab98d8c}{operator$>$=}} (int entero) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador \texorpdfstring{$>$}{>}=. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -61,19 +87,19 @@ Clase para el uso de fracciones.
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_fraccion_a80b8bb475192ceb820428a57e911ceb5}\index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
 \index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
-\doxysubsubsection{\texorpdfstring{Fraccion()}{Fraccion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\doxysubsubsection{\texorpdfstring{Fraccion()}{Fraccion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily \label{class_fraccion_a80b8bb475192ceb820428a57e911ceb5} 
 Fraccion\+::\+Fraccion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
-COnstructor de un nuevo objeto \doxylink{class_fraccion}{Fraccion} vacio. 
+Constructor de un nuevo objeto \doxylink{class_fraccion}{Fraccion} vacio. 
 
 Constructor por defecto que no recibe nada.
 
 La fraccion por defecto es 0 / 1 \Hypertarget{class_fraccion_a6f9e2752a686e2508b94f33cbdc9ab15}\index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
 \index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
-\doxysubsubsection{\texorpdfstring{Fraccion()}{Fraccion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\doxysubsubsection{\texorpdfstring{Fraccion()}{Fraccion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily \label{class_fraccion_a6f9e2752a686e2508b94f33cbdc9ab15} 
 Fraccion\+::\+Fraccion (\begin{DoxyParamCaption}\item[{int}]{numerador}{, }\item[{int}]{denominador}{}\end{DoxyParamCaption})}
 
@@ -96,7 +122,7 @@ Recibe tanto el numerado como el denominador
 \end{DoxyParams}
 \Hypertarget{class_fraccion_a6184e9ab624221ddb9b18b5f7a35602c}\index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
 \index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
-\doxysubsubsection{\texorpdfstring{Fraccion()}{Fraccion()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\doxysubsubsection{\texorpdfstring{Fraccion()}{Fraccion()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily \label{class_fraccion_a6184e9ab624221ddb9b18b5f7a35602c} 
 Fraccion\+::\+Fraccion (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&}]{frac}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -109,6 +135,23 @@ Recibe un objeto \doxylink{class_fraccion}{Fraccion} para la creacion de una
 
 \begin{DoxyParams}{Parameters}
 {\em frac} & \doxylink{class_fraccion}{Fraccion}, objeto \doxylink{class_fraccion}{Fraccion} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fraccion_a8e54336bbcceb48761b37e321efef8fc}\index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
+\index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
+\doxysubsubsection{\texorpdfstring{Fraccion()}{Fraccion()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{class_fraccion_a8e54336bbcceb48761b37e321efef8fc} 
+Fraccion\+::\+Fraccion (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{fraccion}{}\end{DoxyParamCaption})}
+
+
+
+Constructor que recibe un string para la construccion de un objeto \doxylink{class_fraccion}{Fraccion}. 
+
+El formato en string se usa "{}a/b"{}, por ejemplo, \doxylink{class_fraccion}{Fraccion}("{}1/4"{});
+
+
+\begin{DoxyParams}{Parameters}
+{\em fraccion} & String para separar los numeros del texto. \\
 \hline
 \end{DoxyParams}
 
@@ -150,7 +193,47 @@ void Fraccion\+::limpiar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 Limpriara la fraccion por el valor por defecto (0 / 1) 
 
-Establecera el valor por defecto (0 / 1) \Hypertarget{class_fraccion_a040a5a2d549271cd3670af65bdc55110}\index{Fraccion@{Fraccion}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+Establecera el valor por defecto (0 / 1) \Hypertarget{class_fraccion_a15c82778df77bda0ade27f2479f93073}\index{Fraccion@{Fraccion}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Fraccion@{Fraccion}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_fraccion_a15c82778df77bda0ade27f2479f93073} 
+bool Fraccion\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&}]{frac}{}\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador !=. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frac} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\+: Si las fracciones no son iguales 
+
+false\+: Si las fracciones son iguales 
+\end{DoxyReturn}
+\Hypertarget{class_fraccion_a0ee15df94f96b0c41c4ca149cceca9de}\index{Fraccion@{Fraccion}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Fraccion@{Fraccion}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_fraccion_a0ee15df94f96b0c41c4ca149cceca9de} 
+bool Fraccion\+::operator!= (\begin{DoxyParamCaption}\item[{int}]{entero}{}\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador !=. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entero} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\+: Si la fraccion y el entero no son iguales 
+
+false\+: Si la fraccion y el entero son iguales 
+\end{DoxyReturn}
+\Hypertarget{class_fraccion_a040a5a2d549271cd3670af65bdc55110}\index{Fraccion@{Fraccion}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
 \index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!Fraccion@{Fraccion}}
 \doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{class_fraccion_a040a5a2d549271cd3670af65bdc55110} 
@@ -374,6 +457,86 @@ Implementación de la sobrecarga del operador /, con entero.
 \begin{DoxyReturn}{Returns}
 \doxylink{class_fraccion}{Fraccion}\+: Resultado de la division 
 \end{DoxyReturn}
+\Hypertarget{class_fraccion_a725550abf93052cba741b9f6c36593ac}\index{Fraccion@{Fraccion}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Fraccion@{Fraccion}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_fraccion_a725550abf93052cba741b9f6c36593ac} 
+bool Fraccion\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&}]{frac}{}\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador \texorpdfstring{$<$}{<}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frac} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\+: Si la fraccion es menor que frac 
+
+false\+: Si la fraccion no es menor que frac 
+\end{DoxyReturn}
+\Hypertarget{class_fraccion_ab34df7cd5f7f32047d60aa5b0173ff46}\index{Fraccion@{Fraccion}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Fraccion@{Fraccion}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_fraccion_ab34df7cd5f7f32047d60aa5b0173ff46} 
+bool Fraccion\+::operator$<$ (\begin{DoxyParamCaption}\item[{int}]{entero}{}\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador \texorpdfstring{$<$}{<}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entero} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\+: Si la fraccion es menor que el entero 
+
+false\+: Si la fraccion no es menor que el entero 
+\end{DoxyReturn}
+\Hypertarget{class_fraccion_a5244a8eabdf82c175a0d62598cfe399c}\index{Fraccion@{Fraccion}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Fraccion@{Fraccion}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_fraccion_a5244a8eabdf82c175a0d62598cfe399c} 
+bool Fraccion\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&}]{frac}{}\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador \texorpdfstring{$<$}{<}=. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frac} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\+: Si la fraccion es menor o igual que frac 
+
+false\+: Si la fraccion no es menor o igual que frac 
+\end{DoxyReturn}
+\Hypertarget{class_fraccion_a78747120d842024ba80fe0386000cad7}\index{Fraccion@{Fraccion}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Fraccion@{Fraccion}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_fraccion_a78747120d842024ba80fe0386000cad7} 
+bool Fraccion\+::operator$<$= (\begin{DoxyParamCaption}\item[{int}]{entero}{}\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador \texorpdfstring{$<$}{<}=. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entero} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\+: Si la fraccion es menor o igual que el entero 
+
+false\+: Si la fraccion no es menor o igual que el entero 
+\end{DoxyReturn}
 \Hypertarget{class_fraccion_a8443aaef386a959121d7853cfca3b5c6}\index{Fraccion@{Fraccion}!operator==@{operator==}}
 \index{operator==@{operator==}!Fraccion@{Fraccion}}
 \doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -430,6 +593,104 @@ true\+: Si la fraccion y el entero son iguales
 
 false\+: si lafraccion y el entero no son iguales 
 \end{DoxyReturn}
+\Hypertarget{class_fraccion_aac40897cadcd5353d9c91a15ec972d27}\index{Fraccion@{Fraccion}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Fraccion@{Fraccion}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_fraccion_aac40897cadcd5353d9c91a15ec972d27} 
+bool Fraccion\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&}]{frac}{}\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador \texorpdfstring{$>$}{>} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frac} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\+: Si la fraccion es mayor que frac 
+
+false\+: Si la fraccion no es mayor que frac 
+\end{DoxyReturn}
+\Hypertarget{class_fraccion_adb030a3f7f6d8a99e0f06b83898f857a}\index{Fraccion@{Fraccion}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Fraccion@{Fraccion}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_fraccion_adb030a3f7f6d8a99e0f06b83898f857a} 
+bool Fraccion\+::operator$>$ (\begin{DoxyParamCaption}\item[{int}]{entero}{}\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador \texorpdfstring{$>$}{>} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entero} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\+: Si la fraccion es mayor que el entero 
+
+false\+: Si la fraccion no es mayor que el entero 
+\end{DoxyReturn}
+\Hypertarget{class_fraccion_abc6c557e5865b11136fa24b941826d4c}\index{Fraccion@{Fraccion}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Fraccion@{Fraccion}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_fraccion_abc6c557e5865b11136fa24b941826d4c} 
+bool Fraccion\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fraccion}{Fraccion}} \&}]{frac}{}\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador \texorpdfstring{$>$}{>}=. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frac} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\+: Si la fraccion es mayor o igual que frac 
+
+false\+: Si la fraccion no es mayor o igual que frac 
+\end{DoxyReturn}
+\Hypertarget{class_fraccion_ad40ef0ee65b6d61afd4449b1cab98d8c}\index{Fraccion@{Fraccion}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Fraccion@{Fraccion}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_fraccion_ad40ef0ee65b6d61afd4449b1cab98d8c} 
+bool Fraccion\+::operator$>$= (\begin{DoxyParamCaption}\item[{int}]{entero}{}\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador \texorpdfstring{$>$}{>}=. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entero} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\+: Si la fraccion es mayor o igual que el entero 
+
+false\+: Si la fraccion no es mayor o igual que el entero 
+\end{DoxyReturn}
+\Hypertarget{class_fraccion_abc82905ddcca466ad128a91a28721e99}\index{Fraccion@{Fraccion}!pow@{pow}}
+\index{pow@{pow}!Fraccion@{Fraccion}}
+\doxysubsubsection{\texorpdfstring{pow()}{pow()}}
+{\footnotesize\ttfamily \label{class_fraccion_abc82905ddcca466ad128a91a28721e99} 
+\mbox{\hyperlink{class_fraccion}{Fraccion}} Fraccion\+::pow (\begin{DoxyParamCaption}\item[{int}]{pow}{}\end{DoxyParamCaption}) const}
+
+
+
+Elevara la fraccion al valor que reciba pow; (a/b)\texorpdfstring{$^\wedge$}{\string^}pow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pow} & Valor al que se elevara la fracción \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_fraccion}{Fraccion} 
+\end{DoxyReturn}
 \Hypertarget{class_fraccion_a8d952dc4bb7b62c588b5af32d8fc81d6}\index{Fraccion@{Fraccion}!setDenominador@{setDenominador}}
 \index{setDenominador@{setDenominador}!Fraccion@{Fraccion}}
 \doxysubsubsection{\texorpdfstring{setDenominador()}{setDenominador()}}
@@ -460,6 +721,19 @@ Set el numerador del objeto Fracción.
 {\em n} & Nuevo valor del numerador a asignar \\
 \hline
 \end{DoxyParams}
+\Hypertarget{class_fraccion_a0ced8a4a01e5d55a871720ad0fe9fe3f}\index{Fraccion@{Fraccion}!sqrt@{sqrt}}
+\index{sqrt@{sqrt}!Fraccion@{Fraccion}}
+\doxysubsubsection{\texorpdfstring{sqrt()}{sqrt()}}
+{\footnotesize\ttfamily \label{class_fraccion_a0ced8a4a01e5d55a871720ad0fe9fe3f} 
+\mbox{\hyperlink{class_fraccion}{Fraccion}} Fraccion\+::sqrt (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Calculara la raiz cuadrada de la fraccion; \doxylink{class_fraccion_a0ced8a4a01e5d55a871720ad0fe9fe3f}{sqrt()} 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_fraccion}{Fraccion}\+: Raiz cuadrada de la fraccion 
+\end{DoxyReturn}
 
 
 \doxysubsection{Friends And Related Symbol Documentation}
