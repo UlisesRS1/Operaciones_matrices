@@ -377,6 +377,39 @@ Fraccion Fraccion::operator/(float flotante) const{
     return frac / flot; 
 }
 
+ /**
+ * @brief Devuelve el valor aproximado a la fraccion como entero
+ * 
+ * @return int 
+*/
+int Fraccion::toInteger() const{
+    return numerador / denominador;
+}
+
+/**
+ * @brief Devuelve el valor aproximado de la fraccion como double
+ * 
+ * @return double 
+*/
+double Fraccion::toDouble() const{
+    double numeradorDouble = numerador;
+    double denominadorDouble = denominador;
+
+    return numeradorDouble / denominadorDouble;
+}
+
+/**
+ * @brief Devuelve el valor aproximado de la fraccion como float
+ * 
+ * @return float 
+*/
+float Fraccion::toFloat() const{
+    float numeradorFloat = numerador;
+    float denominadorFloat = denominador;
+
+    return numeradorFloat / denominadorFloat;
+}
+
 /**
  * @brief Elevara la fraccion al valor que reciba pow; (a/b)^pow 
  * 
