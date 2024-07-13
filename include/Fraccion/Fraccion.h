@@ -284,6 +284,27 @@ public:
     Fraccion operator /(float flotante) const;
 
     /**
+     * @brief Devuelve el valor aproximado a la fraccion como entero
+     * 
+     * @return int 
+     */
+    int toInteger() const;
+
+    /**
+     * @brief Devuelve el valor aproximado de la fraccion como double
+     * 
+     * @return double 
+     */
+    double toDouble() const;
+
+    /**
+     * @brief Devuelve el valor aproximado de la fraccion como float
+     * 
+     * @return float 
+     */
+    float toFloat() const;
+
+    /**
      * @brief Elevara la fraccion al valor que reciba pow; (a/b)^pow 
      * 
      * @param pow Valor al que se elevara la fracción
