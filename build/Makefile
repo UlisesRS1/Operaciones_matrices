@@ -190,29 +190,29 @@ src\StringUtils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrices.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Matrices.dir\src\StringUtils.cpp.s
 .PHONY : src\StringUtils.cpp.s
 
-tests\TestFraccion_13-07-2024.obj: tests\TestFraccion_13-07-2024.cpp.obj
-.PHONY : tests\TestFraccion_13-07-2024.obj
+tests\StringUtils_14-07-2024.obj: tests\StringUtils_14-07-2024.cpp.obj
+.PHONY : tests\StringUtils_14-07-2024.obj
 
 # target to build an object file
-tests\TestFraccion_13-07-2024.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrices.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Matrices.dir\tests\TestFraccion_13-07-2024.cpp.obj
-.PHONY : tests\TestFraccion_13-07-2024.cpp.obj
+tests\StringUtils_14-07-2024.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrices.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Matrices.dir\tests\StringUtils_14-07-2024.cpp.obj
+.PHONY : tests\StringUtils_14-07-2024.cpp.obj
 
-tests\TestFraccion_13-07-2024.i: tests\TestFraccion_13-07-2024.cpp.i
-.PHONY : tests\TestFraccion_13-07-2024.i
+tests\StringUtils_14-07-2024.i: tests\StringUtils_14-07-2024.cpp.i
+.PHONY : tests\StringUtils_14-07-2024.i
 
 # target to preprocess a source file
-tests\TestFraccion_13-07-2024.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrices.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Matrices.dir\tests\TestFraccion_13-07-2024.cpp.i
-.PHONY : tests\TestFraccion_13-07-2024.cpp.i
+tests\StringUtils_14-07-2024.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrices.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Matrices.dir\tests\StringUtils_14-07-2024.cpp.i
+.PHONY : tests\StringUtils_14-07-2024.cpp.i
 
-tests\TestFraccion_13-07-2024.s: tests\TestFraccion_13-07-2024.cpp.s
-.PHONY : tests\TestFraccion_13-07-2024.s
+tests\StringUtils_14-07-2024.s: tests\StringUtils_14-07-2024.cpp.s
+.PHONY : tests\StringUtils_14-07-2024.s
 
 # target to generate assembly for a file
-tests\TestFraccion_13-07-2024.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrices.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Matrices.dir\tests\TestFraccion_13-07-2024.cpp.s
-.PHONY : tests\TestFraccion_13-07-2024.cpp.s
+tests\StringUtils_14-07-2024.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrices.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Matrices.dir\tests\StringUtils_14-07-2024.cpp.s
+.PHONY : tests\StringUtils_14-07-2024.cpp.s
 
 # Help Target
 help:
@@ -232,9 +232,9 @@ help:
 	@echo ... src/StringUtils.obj
 	@echo ... src/StringUtils.i
 	@echo ... src/StringUtils.s
-	@echo ... tests/TestFraccion_13-07-2024.obj
-	@echo ... tests/TestFraccion_13-07-2024.i
-	@echo ... tests/TestFraccion_13-07-2024.s
+	@echo ... tests/StringUtils_14-07-2024.obj
+	@echo ... tests/StringUtils_14-07-2024.i
+	@echo ... tests/StringUtils_14-07-2024.s
 .PHONY : help
 
 

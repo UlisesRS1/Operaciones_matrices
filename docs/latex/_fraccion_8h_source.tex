@@ -19,133 +19,167 @@
 \DoxyCodeLine{00024\ \textcolor{comment}{\ \ \ \ \ \ \ \ -\/>\ \ Imprimir\ fracción\ con\ formato\ x/y.**}}
 \DoxyCodeLine{00025\ \textcolor{comment}{}}
 \DoxyCodeLine{00026\ \textcolor{comment}{\ \ \ \ \ \ \ \ -\/-\/\ De\ manera\ general\ solo\ falta\ la\ implementación}}
-\DoxyCodeLine{00027\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_fraccion}{Fraccion}}}
-\DoxyCodeLine{00035\ \{}
-\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ numerador;}
-\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{int}\ denominador;}
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ simplificar();}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ setTexttoFraccion(\textcolor{keyword}{const}\ std::string\&\ fraccion);}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{class_fraccion_a80b8bb475192ceb820428a57e911ceb5}{Fraccion}}();}
-\DoxyCodeLine{00067\ }
-\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{class_fraccion_a80b8bb475192ceb820428a57e911ceb5}{Fraccion}}(\textcolor{keywordtype}{int}\ numerador,\ \textcolor{keywordtype}{int}\ denominador);}
-\DoxyCodeLine{00075\ }
-\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{class_fraccion_a6184e9ab624221ddb9b18b5f7a35602c}{Fraccion}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ :\ \mbox{\hyperlink{class_fraccion}{Fraccion}}(frac.numerador,\ frac.denominador)\ \{\}}
-\DoxyCodeLine{00083\ }
-\DoxyCodeLine{00090\ \ \ \ \ \mbox{\hyperlink{class_fraccion_a80b8bb475192ceb820428a57e911ceb5}{Fraccion}}(\textcolor{keyword}{const}\ std::string\&\ fraccion);}
+\DoxyCodeLine{00027\ \textcolor{comment}{}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Nuevas\ tarea}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ \ \ \ \ \ \ \ -\/>\ \ Creacion\ de\ metodos\ para\ el\ manejo\ de\ operaciones\ con\ mas\ }}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ tipos\ de\ datos\ con\ fracciones}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ \ \ \ \ \ \ \ (Para\ hacer\ la\ libreria\ un\ poco\ más\ completa)}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ \ \ \ \ \ \ \ (Aplicara\ tambien\ para\ las\ operaciones\ de\ matrices)\ }}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ \ \ \ \ \ \ \ -\/>\ \ Agragar\ un\ metodo\ que\ retorne\ un\ string\ en\ el\ cual\ se\ muestre}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ la\ fraccion\ en\ el\ fomato\ "{}entero\ a/b"{}.}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_fraccion}{Fraccion}}}
+\DoxyCodeLine{00043\ \{}
+\DoxyCodeLine{00044\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ numerador;}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ denominador;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ simplificar();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ setTexttoFraccion(\textcolor{keyword}{const}\ std::string\&\ fraccion);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ toFraccion(\textcolor{keywordtype}{double}\ flotante)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00076\ \ \ \ \ }
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ toFraccion(\textcolor{keywordtype}{float}\ flotante)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00090\ \ \ \ \ \mbox{\hyperlink{class_fraccion_a80b8bb475192ceb820428a57e911ceb5}{Fraccion}}();}
 \DoxyCodeLine{00091\ }
-\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fraccion_ab05f42515f4fab353d4e5b5c37b9083f}{setNumerador}}(\textcolor{keywordtype}{int}\ n)\{}
-\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ this-\/>numerador\ =\ n;}
-\DoxyCodeLine{00099\ \ \ \ \ \}}
-\DoxyCodeLine{00100\ }
-\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fraccion_a2888ab0195106948330e9492d82ca25b}{getNumerador}}()\{}
-\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>numerador;}
-\DoxyCodeLine{00108\ \ \ \ \ \}}
-\DoxyCodeLine{00109\ }
-\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fraccion_a8d952dc4bb7b62c588b5af32d8fc81d6}{setDenominador}}(\textcolor{keywordtype}{int}\ d)\{}
-\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ this-\/>denominador\ =\ d;}
-\DoxyCodeLine{00117\ \ \ \ \ \}}
-\DoxyCodeLine{00118\ }
-\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fraccion_abc736634eb04e547886b8c0cc8f970c8}{getDenominador}}()\{}
-\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>denominador;}
-\DoxyCodeLine{00126\ \ \ \ \ \}}
-\DoxyCodeLine{00127\ }
-\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fraccion_a2df74e4f354818062304eb1b1c17f020}{limpiar}}();}
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{class_fraccion_a80b8bb475192ceb820428a57e911ceb5}{Fraccion}}(\textcolor{keywordtype}{int}\ numerador,\ \textcolor{keywordtype}{int}\ denominador);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{class_fraccion_a6184e9ab624221ddb9b18b5f7a35602c}{Fraccion}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ :\ \mbox{\hyperlink{class_fraccion}{Fraccion}}(frac.numerador,\ frac.denominador)\ \{\}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{class_fraccion_a80b8bb475192ceb820428a57e911ceb5}{Fraccion}}(\textcolor{keyword}{const}\ std::string\&\ fraccion);}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fraccion_ab05f42515f4fab353d4e5b5c37b9083f}{setNumerador}}(\textcolor{keywordtype}{int}\ n)\{}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ this-\/>numerador\ =\ n;}
+\DoxyCodeLine{00123\ \ \ \ \ \}}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fraccion_a2888ab0195106948330e9492d82ca25b}{getNumerador}}()\{}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>numerador;}
+\DoxyCodeLine{00132\ \ \ \ \ \}}
 \DoxyCodeLine{00133\ }
-\DoxyCodeLine{00140\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a4a1602801b5600cbe6433743b3edd359}{operator\ +}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00141\ \ \ \ \ }
-\DoxyCodeLine{00148\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a4a1602801b5600cbe6433743b3edd359}{operator\ +}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00149\ }
-\DoxyCodeLine{00156\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_ac86d364f7b0cea94c7bdf81ae23db16e}{operator\ -\/}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fraccion_a8d952dc4bb7b62c588b5af32d8fc81d6}{setDenominador}}(\textcolor{keywordtype}{int}\ d)\{}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ this-\/>denominador\ =\ d;}
+\DoxyCodeLine{00141\ \ \ \ \ \}}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fraccion_abc736634eb04e547886b8c0cc8f970c8}{getDenominador}}()\{}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>denominador;}
+\DoxyCodeLine{00150\ \ \ \ \ \}}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fraccion_a2df74e4f354818062304eb1b1c17f020}{limpiar}}();}
 \DoxyCodeLine{00157\ }
-\DoxyCodeLine{00164\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_ac86d364f7b0cea94c7bdf81ae23db16e}{operator\ -\/}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00165\ }
-\DoxyCodeLine{00172\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a040a5a2d549271cd3670af65bdc55110}{operator\ *}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00164\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a4a1602801b5600cbe6433743b3edd359}{operator\ +}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00165\ \ \ \ \ }
+\DoxyCodeLine{00172\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a4a1602801b5600cbe6433743b3edd359}{operator\ +}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00173\ }
-\DoxyCodeLine{00180\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a040a5a2d549271cd3670af65bdc55110}{operator\ *}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00180\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a4a1602801b5600cbe6433743b3edd359}{operator\ +}}(\textcolor{keywordtype}{double}\ flotante)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00181\ }
-\DoxyCodeLine{00188\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a0b5dc2242292b3d9dd8e0e4b71f9084f}{operator\ /}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00188\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a4a1602801b5600cbe6433743b3edd359}{operator\ +}}(\textcolor{keywordtype}{float}\ flotante)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00189\ }
-\DoxyCodeLine{00196\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a0b5dc2242292b3d9dd8e0e4b71f9084f}{operator\ /}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00196\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_ac86d364f7b0cea94c7bdf81ae23db16e}{operator\ -\/}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00197\ }
-\DoxyCodeLine{00204\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_abc82905ddcca466ad128a91a28721e99}{pow}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fraccion_abc82905ddcca466ad128a91a28721e99}{pow}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00204\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_ac86d364f7b0cea94c7bdf81ae23db16e}{operator\ -\/}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00205\ }
-\DoxyCodeLine{00211\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a0ced8a4a01e5d55a871720ad0fe9fe3f}{sqrt}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00212\ }
-\DoxyCodeLine{00221\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a8443aaef386a959121d7853cfca3b5c6}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00222\ }
-\DoxyCodeLine{00231\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a8443aaef386a959121d7853cfca3b5c6}{operator==}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00232\ }
-\DoxyCodeLine{00240\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a15c82778df77bda0ade27f2479f93073}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00241\ }
-\DoxyCodeLine{00249\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a15c82778df77bda0ade27f2479f93073}{operator!=}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00250\ }
-\DoxyCodeLine{00258\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a725550abf93052cba741b9f6c36593ac}{operator<}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00259\ \ \ \ \ }
-\DoxyCodeLine{00267\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a725550abf93052cba741b9f6c36593ac}{operator<}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00268\ }
-\DoxyCodeLine{00276\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_aac40897cadcd5353d9c91a15ec972d27}{operator>}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00212\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_ac86d364f7b0cea94c7bdf81ae23db16e}{operator\ -\/}}(\textcolor{keywordtype}{double}\ flotante)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00220\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_ac86d364f7b0cea94c7bdf81ae23db16e}{operator\ -\/}}(\textcolor{keywordtype}{float}\ flotante)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00221\ \ \ \ \ }
+\DoxyCodeLine{00228\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a040a5a2d549271cd3670af65bdc55110}{operator\ *}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00236\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a040a5a2d549271cd3670af65bdc55110}{operator\ *}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00237\ }
+\DoxyCodeLine{00244\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a040a5a2d549271cd3670af65bdc55110}{operator\ *}}(\textcolor{keywordtype}{double}\ flotante)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00252\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a040a5a2d549271cd3670af65bdc55110}{operator\ *}}(\textcolor{keywordtype}{float}\ flotante)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00253\ }
+\DoxyCodeLine{00260\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a0b5dc2242292b3d9dd8e0e4b71f9084f}{operator\ /}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00261\ }
+\DoxyCodeLine{00268\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a0b5dc2242292b3d9dd8e0e4b71f9084f}{operator\ /}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00269\ }
+\DoxyCodeLine{00276\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a0b5dc2242292b3d9dd8e0e4b71f9084f}{operator\ /}}(\textcolor{keywordtype}{double}\ flotante)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00277\ \ \ \ \ }
-\DoxyCodeLine{00285\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_aac40897cadcd5353d9c91a15ec972d27}{operator>}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00286\ }
-\DoxyCodeLine{00294\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a5244a8eabdf82c175a0d62598cfe399c}{operator<=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00295\ \ \ \ \ }
-\DoxyCodeLine{00303\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a5244a8eabdf82c175a0d62598cfe399c}{operator<=}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00304\ }
-\DoxyCodeLine{00312\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_abc6c557e5865b11136fa24b941826d4c}{operator>=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00313\ \ \ \ \ }
-\DoxyCodeLine{00321\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_abc6c557e5865b11136fa24b941826d4c}{operator>=}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00322\ }
-\DoxyCodeLine{00330\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{class_fraccion_adc8c72dc8ad5f4bd19a5f1d60b5ba668}{operator\ <<}}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac);}
+\DoxyCodeLine{00284\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a0b5dc2242292b3d9dd8e0e4b71f9084f}{operator\ /}}(\textcolor{keywordtype}{float}\ flotante)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00285\ }
+\DoxyCodeLine{00291\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fraccion_aaf064ea120388f1bcee0895a01d0f690}{toInteger}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00292\ }
+\DoxyCodeLine{00298\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_fraccion_a281396e5520e865fafdef03e90dd01ea}{toDouble}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00299\ }
+\DoxyCodeLine{00305\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_fraccion_ad5a33c31167c68afea1f59d3cb1c54bd}{toFloat}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00306\ }
+\DoxyCodeLine{00313\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_abc82905ddcca466ad128a91a28721e99}{pow}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fraccion_abc82905ddcca466ad128a91a28721e99}{pow}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00314\ }
+\DoxyCodeLine{00320\ \ \ \ \ \mbox{\hyperlink{class_fraccion}{Fraccion}}\ \mbox{\hyperlink{class_fraccion_a0ced8a4a01e5d55a871720ad0fe9fe3f}{sqrt}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00321\ }
+\DoxyCodeLine{00330\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a8443aaef386a959121d7853cfca3b5c6}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00331\ }
-\DoxyCodeLine{00332\ }
-\DoxyCodeLine{00333\ \};}
-\DoxyCodeLine{00334\ }
-\DoxyCodeLine{00335\ \textcolor{preprocessor}{\#endif\ FRACCION\_H}}
-\DoxyCodeLine{00336\ }
-\DoxyCodeLine{00337\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00338\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ Notas\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00339\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
-\DoxyCodeLine{00340\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/-\/\ Estructura\ Básica\ para\ Sobrecargar\ Operadores\ -\/-\/}}
-\DoxyCodeLine{00341\ \textcolor{comment}{\ \ \ \ En\ C++,\ los\ operadores\ se\ sobrecargan\ utilizando\ funciones\ miembro\ o\ funciones\ amigas.\ }}
-\DoxyCodeLine{00342\ \textcolor{comment}{\ \ \ \ La\ estructura\ básica\ para\ sobrecargar\ un\ operador\ es\ la\ siguiente:}}
-\DoxyCodeLine{00343\ \textcolor{comment}{}}
-\DoxyCodeLine{00344\ \textcolor{comment}{\ \ \ \ cpp}}
-\DoxyCodeLine{00345\ \textcolor{comment}{\ \ \ \ tipo\_retorno\ operatorop(const\ tipo\&\ operando)\ \{}}
-\DoxyCodeLine{00346\ \textcolor{comment}{\ \ \ \ \ \ \ \ //\ Implementación\ de\ la\ operación}}
-\DoxyCodeLine{00347\ \textcolor{comment}{\ \ \ \ \ \ \ \ //\ Puedes\ acceder\ a\ los\ miembros\ de\ la\ clase\ y\ a\ los\ miembros\ de\ operando}}
-\DoxyCodeLine{00348\ \textcolor{comment}{\ \ \ \ \ \ \ \ //\ Devuelve\ el\ resultado\ deseado}}
-\DoxyCodeLine{00349\ \textcolor{comment}{\ \ \ \ \}}}
-\DoxyCodeLine{00350\ \textcolor{comment}{\ \ \ \ Donde:}}
-\DoxyCodeLine{00351\ \textcolor{comment}{\ \ \ \ operatorop\ es\ el\ operador\ que\ deseas\ sobrecargar\ (por\ ejemplo,\ +,\ -\/,\ *,\ /,\ <<,\ >>,\ etc.).}}
-\DoxyCodeLine{00352\ \textcolor{comment}{\ \ \ \ tipo\_retorno\ es\ el\ tipo\ de\ dato\ que\ devuelve\ la\ operación.}}
-\DoxyCodeLine{00353\ \textcolor{comment}{\ \ \ \ tipo\ es\ el\ tipo\ de\ dato\ del\ operando\ con\ el\ que\ estás\ trabajando.}}
-\DoxyCodeLine{00354\ \textcolor{comment}{}}
-\DoxyCodeLine{00355\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/-\/-\/\ Sobrecarga\ del\ operador\ <<\ -\/-\/-\/}}
-\DoxyCodeLine{00356\ \textcolor{comment}{\ \ \ \ En\ C++,\ cuando\ sobrecargas\ el\ operador\ <<\ para\ una\ clase,\ lo\ haces\ generalmente\ como\ una\ }}
-\DoxyCodeLine{00357\ \textcolor{comment}{\ \ \ \ función\ amiga\ (friend\ function)\ de\ esa\ clase.\ Esto\ tiene\ varias\ razones\ y\ beneficios:}}
-\DoxyCodeLine{00358\ \textcolor{comment}{}}
-\DoxyCodeLine{00359\ \textcolor{comment}{\ \ \ \ -\/>\ \ Acceso\ a\ miembros\ privados:\ Como\ el\ operador\ <<\ necesita\ acceder\ a\ los\ miembros\ privados\ }}
-\DoxyCodeLine{00360\ \textcolor{comment}{\ \ \ \ \ \ \ \ de\ la\ clase\ Fraccion\ para\ imprimirlos,\ se\ declara\ como\ amiga\ para\ tener\ acceso\ directo\ a\ }}
-\DoxyCodeLine{00361\ \textcolor{comment}{\ \ \ \ \ \ \ \ estos\ miembros,\ incluso\ si\ son\ privados.}}
-\DoxyCodeLine{00362\ \textcolor{comment}{}}
-\DoxyCodeLine{00363\ \textcolor{comment}{\ \ \ \ -\/>\ \ Flujo\ de\ salida\ (ostream):\ El\ operador\ <<\ está\ definido\ para\ trabajar\ con\ objetos\ que\ son\ }}
-\DoxyCodeLine{00364\ \textcolor{comment}{\ \ \ \ \ \ \ \ capaces\ de\ realizar\ operaciones\ de\ salida,\ representados\ por\ std::ostream.\ Esta\ clase\ }}
-\DoxyCodeLine{00365\ \textcolor{comment}{\ \ \ \ \ \ \ \ proporciona\ operaciones\ de\ salida\ comunes\ como\ operator<<\ para\ escribir\ datos\ en\ diversos\ }}
-\DoxyCodeLine{00366\ \textcolor{comment}{\ \ \ \ \ \ \ \ destinos\ (como\ la\ consola,\ archivos,\ etc.).}}
-\DoxyCodeLine{00367\ \textcolor{comment}{}}
-\DoxyCodeLine{00368\ \textcolor{comment}{\ \ \ \ -\/>\ \ Referencia\ constante\ a\ Fraccion:\ El\ segundo\ parámetro\ de\ la\ función\ sobrecargada\ operator<<\ }}
-\DoxyCodeLine{00369\ \textcolor{comment}{\ \ \ \ \ \ \ \ es\ una\ referencia\ constante\ const\ Fraccion\&\ frac.\ Esta\ referencia\ constante\ asegura\ que\ el\ }}
-\DoxyCodeLine{00370\ \textcolor{comment}{\ \ \ \ \ \ \ \ objeto\ frac\ pasado\ como\ argumento\ no\ se\ modificará\ dentro\ de\ la\ función\ operator<<.}}
-\DoxyCodeLine{00371\ \textcolor{comment}{}}
-\DoxyCodeLine{00372\ \textcolor{comment}{\ \ \ \ -\/>\ \ std::ostream\&\ operator<<(std::ostream\&\ os,\ const\ Fraccion\&\ frac)\ //\ Estructura}}
-\DoxyCodeLine{00373\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00340\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a8443aaef386a959121d7853cfca3b5c6}{operator==}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00341\ }
+\DoxyCodeLine{00349\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a15c82778df77bda0ade27f2479f93073}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00350\ }
+\DoxyCodeLine{00358\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a15c82778df77bda0ade27f2479f93073}{operator!=}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00359\ }
+\DoxyCodeLine{00367\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a725550abf93052cba741b9f6c36593ac}{operator<}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00368\ \ \ \ \ }
+\DoxyCodeLine{00376\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a725550abf93052cba741b9f6c36593ac}{operator<}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00377\ }
+\DoxyCodeLine{00385\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_aac40897cadcd5353d9c91a15ec972d27}{operator>}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00386\ \ \ \ \ }
+\DoxyCodeLine{00394\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_aac40897cadcd5353d9c91a15ec972d27}{operator>}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00395\ }
+\DoxyCodeLine{00403\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a5244a8eabdf82c175a0d62598cfe399c}{operator<=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00404\ \ \ \ \ }
+\DoxyCodeLine{00412\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_a5244a8eabdf82c175a0d62598cfe399c}{operator<=}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00413\ }
+\DoxyCodeLine{00421\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_abc6c557e5865b11136fa24b941826d4c}{operator>=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00422\ \ \ \ \ }
+\DoxyCodeLine{00430\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fraccion_abc6c557e5865b11136fa24b941826d4c}{operator>=}}(\textcolor{keywordtype}{int}\ entero)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00431\ }
+\DoxyCodeLine{00439\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{class_fraccion_adc8c72dc8ad5f4bd19a5f1d60b5ba668}{operator\ <<}}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_fraccion}{Fraccion}}\&\ frac);}
+\DoxyCodeLine{00440\ }
+\DoxyCodeLine{00441\ }
+\DoxyCodeLine{00442\ \};}
+\DoxyCodeLine{00443\ }
+\DoxyCodeLine{00444\ \textcolor{preprocessor}{\#endif\ FRACCION\_H}}
+\DoxyCodeLine{00445\ }
+\DoxyCodeLine{00446\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00447\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ Notas\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00448\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00449\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/-\/\ Estructura\ Básica\ para\ Sobrecargar\ Operadores\ -\/-\/}}
+\DoxyCodeLine{00450\ \textcolor{comment}{\ \ \ \ En\ C++,\ los\ operadores\ se\ sobrecargan\ utilizando\ funciones\ miembro\ o\ funciones\ amigas.\ }}
+\DoxyCodeLine{00451\ \textcolor{comment}{\ \ \ \ La\ estructura\ básica\ para\ sobrecargar\ un\ operador\ es\ la\ siguiente:}}
+\DoxyCodeLine{00452\ \textcolor{comment}{}}
+\DoxyCodeLine{00453\ \textcolor{comment}{\ \ \ \ cpp}}
+\DoxyCodeLine{00454\ \textcolor{comment}{\ \ \ \ tipo\_retorno\ operatorop(const\ tipo\&\ operando)\ \{}}
+\DoxyCodeLine{00455\ \textcolor{comment}{\ \ \ \ \ \ \ \ //\ Implementación\ de\ la\ operación}}
+\DoxyCodeLine{00456\ \textcolor{comment}{\ \ \ \ \ \ \ \ //\ Puedes\ acceder\ a\ los\ miembros\ de\ la\ clase\ y\ a\ los\ miembros\ de\ operando}}
+\DoxyCodeLine{00457\ \textcolor{comment}{\ \ \ \ \ \ \ \ //\ Devuelve\ el\ resultado\ deseado}}
+\DoxyCodeLine{00458\ \textcolor{comment}{\ \ \ \ \}}}
+\DoxyCodeLine{00459\ \textcolor{comment}{\ \ \ \ Donde:}}
+\DoxyCodeLine{00460\ \textcolor{comment}{\ \ \ \ operatorop\ es\ el\ operador\ que\ deseas\ sobrecargar\ (por\ ejemplo,\ +,\ -\/,\ *,\ /,\ <<,\ >>,\ etc.).}}
+\DoxyCodeLine{00461\ \textcolor{comment}{\ \ \ \ tipo\_retorno\ es\ el\ tipo\ de\ dato\ que\ devuelve\ la\ operación.}}
+\DoxyCodeLine{00462\ \textcolor{comment}{\ \ \ \ tipo\ es\ el\ tipo\ de\ dato\ del\ operando\ con\ el\ que\ estás\ trabajando.}}
+\DoxyCodeLine{00463\ \textcolor{comment}{}}
+\DoxyCodeLine{00464\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/-\/-\/\ Sobrecarga\ del\ operador\ <<\ -\/-\/-\/}}
+\DoxyCodeLine{00465\ \textcolor{comment}{\ \ \ \ En\ C++,\ cuando\ sobrecargas\ el\ operador\ <<\ para\ una\ clase,\ lo\ haces\ generalmente\ como\ una\ }}
+\DoxyCodeLine{00466\ \textcolor{comment}{\ \ \ \ función\ amiga\ (friend\ function)\ de\ esa\ clase.\ Esto\ tiene\ varias\ razones\ y\ beneficios:}}
+\DoxyCodeLine{00467\ \textcolor{comment}{}}
+\DoxyCodeLine{00468\ \textcolor{comment}{\ \ \ \ -\/>\ \ Acceso\ a\ miembros\ privados:\ Como\ el\ operador\ <<\ necesita\ acceder\ a\ los\ miembros\ privados\ }}
+\DoxyCodeLine{00469\ \textcolor{comment}{\ \ \ \ \ \ \ \ de\ la\ clase\ Fraccion\ para\ imprimirlos,\ se\ declara\ como\ amiga\ para\ tener\ acceso\ directo\ a\ }}
+\DoxyCodeLine{00470\ \textcolor{comment}{\ \ \ \ \ \ \ \ estos\ miembros,\ incluso\ si\ son\ privados.}}
+\DoxyCodeLine{00471\ \textcolor{comment}{}}
+\DoxyCodeLine{00472\ \textcolor{comment}{\ \ \ \ -\/>\ \ Flujo\ de\ salida\ (ostream):\ El\ operador\ <<\ está\ definido\ para\ trabajar\ con\ objetos\ que\ son\ }}
+\DoxyCodeLine{00473\ \textcolor{comment}{\ \ \ \ \ \ \ \ capaces\ de\ realizar\ operaciones\ de\ salida,\ representados\ por\ std::ostream.\ Esta\ clase\ }}
+\DoxyCodeLine{00474\ \textcolor{comment}{\ \ \ \ \ \ \ \ proporciona\ operaciones\ de\ salida\ comunes\ como\ operator<<\ para\ escribir\ datos\ en\ diversos\ }}
+\DoxyCodeLine{00475\ \textcolor{comment}{\ \ \ \ \ \ \ \ destinos\ (como\ la\ consola,\ archivos,\ etc.).}}
+\DoxyCodeLine{00476\ \textcolor{comment}{}}
+\DoxyCodeLine{00477\ \textcolor{comment}{\ \ \ \ -\/>\ \ Referencia\ constante\ a\ Fraccion:\ El\ segundo\ parámetro\ de\ la\ función\ sobrecargada\ operator<<\ }}
+\DoxyCodeLine{00478\ \textcolor{comment}{\ \ \ \ \ \ \ \ es\ una\ referencia\ constante\ const\ Fraccion\&\ frac.\ Esta\ referencia\ constante\ asegura\ que\ el\ }}
+\DoxyCodeLine{00479\ \textcolor{comment}{\ \ \ \ \ \ \ \ objeto\ frac\ pasado\ como\ argumento\ no\ se\ modificará\ dentro\ de\ la\ función\ operator<<.}}
+\DoxyCodeLine{00480\ \textcolor{comment}{}}
+\DoxyCodeLine{00481\ \textcolor{comment}{\ \ \ \ -\/>\ \ std::ostream\&\ operator<<(std::ostream\&\ os,\ const\ Fraccion\&\ frac)\ //\ Estructura}}
+\DoxyCodeLine{00482\ \textcolor{comment}{*/}}
 
 \end{DoxyCode}

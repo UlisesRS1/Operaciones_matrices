@@ -29,6 +29,16 @@ Fraccion::Fraccion(){
     this -> denominador = 1;
 }
 
+ /**
+ * @brief Implementacion del constructor Fraccion
+ * 
+ * @param numerador 
+*/
+Fraccion::Fraccion(int numerador){
+    this -> numerador = numerador;
+    this -> denominador = 1;
+}
+
 /**
  * @brief Implementacion del constructor Fraccion
  * 
@@ -67,6 +77,8 @@ void Fraccion::setTexttoFraccion(const std::string& fraccion) {
 
     this -> numerador = stoi(valores[0]);
     this -> denominador = stoi(valores[1]);
+    
+    simplificar();
 }
 
 /**

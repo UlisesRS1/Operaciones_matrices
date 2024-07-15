@@ -2,12 +2,22 @@
  * @file Matriz.cpp
  * @author Ulises (rodriguezsolorzanoulises@gmail.com)
  * @brief Implementacion de Matriz.h 
- * @version 0.2
+ * @version 0.6
  * @date 2024-06-20
  * 
  * @copyright Copyright (c) 2024
  * 
  */
+
+/*
+    Tareas nuevas 14/07/2024
+    -   Retornar en diferentes tipos de datos el determinante de una matriz
+    -   Si es posible, hacer que no solo se reciban matrices de tipo Fraccion 
+        *   Recibir matrices double
+        *   Recibir matrices float
+        *   Recibir matrices int
+    -   
+*/
 
 #include<iostream>
 #include "Matriz/Matriz.h"
@@ -28,6 +38,14 @@ Matriz::Matriz(const std::vector<std::vector<Fraccion>>& vector) : vector(vector
     }
 }
 
+/**
+ * @brief Devuelve una matriz que es el resultado de la extraccion del cofactor de esta misma
+ * 
+ * @param vec 
+ * @param imatriz 
+ * @param jmatriz 
+ * @return Matriz 
+ */
 Matriz Matriz::cofactor(const Matriz& vec, int imatriz, int jmatriz) const{ 
     //  Para usar los indices que tiene el lenguaje
     imatriz -= 1;
@@ -167,7 +185,7 @@ bool Matriz::verificarCuadradoMatriz(const Matriz& vec) const{
 }
 
 /**
- * @brief 
+ * @brief Sobrecarga del operador << para la impresión de la Matriz
  * 
  * @param os 
  * @param vec 
@@ -309,9 +327,7 @@ Matriz Matriz::operator*(const Matriz& vec) const{
     std::vector<std::vector<Fraccion>> resultado;
 
 
-
-    // ----- En proceso el algoritmo -----
-
+    // Principio de algoritmo
     for (size_t i = 0; i < vector.size(); i++)
     {
         for (size_t j = 0; j < vec.vector[i].size(); j++)
@@ -333,7 +349,7 @@ Matriz Matriz::operator*(const Matriz& vec) const{
             //  Limpiamos fila }
             fila.clear();
     }
-    
+    //  Final del algoritmo
 
     Matriz matriz(resultado);
 
@@ -406,11 +422,13 @@ Matriz Matriz::operator *(const Fraccion& frac) const {
 }
 
 /**
-    * @brief Divide la matriz en cofactores a partor de una coordenada i, j que se ingerese 
+    * @brief Divide la matriz en cofactores a partor de una coordenada i, j que se ingrese y devuelve
+    *        la matriz resultante para el calculo del determinante de una matriz
     * @details  Los indices que recibe son los valores i, j que se usan en matematicas, es decir
     *           se usan a partor del i = 1 y j = 1 como valores minimos, no desde el 0
-    * @param i Es la posicion i de la matriz para determinar el cofactor
-    * @param j Es la posicion j de la matriz para determinar el cofactor
+    * @param vec Es la matriz a la cual se extraera su cofactor
+    * @param imatriz Es la posicion i de la matriz para determinar el cofactor
+    * @param jmatriz Es la posicion j de la matriz para determinar el cofactor
     * @return Matriz: Cofactor resultante
 */
 Fraccion Matriz::mCofactor(const Matriz& vec, int imatriz, int jmatriz) const{
@@ -513,6 +531,11 @@ Matriz Matriz::transpuesta(const Matriz& vec) const{
     return Matriz(transpuesta);
 }
 
+/**
+ * @brief Devolvera la Matriz inversa
+ * 
+ * @return Matriz 
+ */
 Matriz Matriz::inversa() const{
     //  En caso de que el determinante sea igual a cero, no sera posible
     if(determinante(vector) == 0){

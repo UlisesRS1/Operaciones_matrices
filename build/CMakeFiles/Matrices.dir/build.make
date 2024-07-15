@@ -118,24 +118,24 @@ CMakeFiles\Matrices.dir\src\StringUtils.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Matrices.dir\src\StringUtils.cpp.s /c "C:\Users\Uli Rodriguez\OneDrive\Documentos\2024\Matrices\src\StringUtils.cpp"
 <<
 
-CMakeFiles\Matrices.dir\tests\TestFraccion_13-07-2024.cpp.obj: CMakeFiles\Matrices.dir\flags.make
-CMakeFiles\Matrices.dir\tests\TestFraccion_13-07-2024.cpp.obj: "C:\Users\Uli Rodriguez\OneDrive\Documentos\2024\Matrices\tests\TestFraccion_13-07-2024.cpp"
-CMakeFiles\Matrices.dir\tests\TestFraccion_13-07-2024.cpp.obj: CMakeFiles\Matrices.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Uli Rodriguez\OneDrive\Documentos\2024\Matrices\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Matrices.dir/tests/TestFraccion_13-07-2024.cpp.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\Matrices.dir\tests\TestFraccion_13-07-2024.cpp.obj.d --working-dir="C:\Users\Uli Rodriguez\OneDrive\Documentos\2024\Matrices\build" --filter-prefix="Nota: inclusión del archivo: " -- C:\PROGRA~2\MICROS~4\2019\BUILDT~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\Matrices.dir\tests\TestFraccion_13-07-2024.cpp.obj /FdCMakeFiles\Matrices.dir\ /FS -c "C:\Users\Uli Rodriguez\OneDrive\Documentos\2024\Matrices\tests\TestFraccion_13-07-2024.cpp"
+CMakeFiles\Matrices.dir\tests\StringUtils_14-07-2024.cpp.obj: CMakeFiles\Matrices.dir\flags.make
+CMakeFiles\Matrices.dir\tests\StringUtils_14-07-2024.cpp.obj: "C:\Users\Uli Rodriguez\OneDrive\Documentos\2024\Matrices\tests\StringUtils_14-07-2024.cpp"
+CMakeFiles\Matrices.dir\tests\StringUtils_14-07-2024.cpp.obj: CMakeFiles\Matrices.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Uli Rodriguez\OneDrive\Documentos\2024\Matrices\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Matrices.dir/tests/StringUtils_14-07-2024.cpp.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\Matrices.dir\tests\StringUtils_14-07-2024.cpp.obj.d --working-dir="C:\Users\Uli Rodriguez\OneDrive\Documentos\2024\Matrices\build" --filter-prefix="Nota: inclusión del archivo: " -- C:\PROGRA~2\MICROS~4\2019\BUILDT~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\Matrices.dir\tests\StringUtils_14-07-2024.cpp.obj /FdCMakeFiles\Matrices.dir\ /FS -c "C:\Users\Uli Rodriguez\OneDrive\Documentos\2024\Matrices\tests\StringUtils_14-07-2024.cpp"
 <<
 
-CMakeFiles\Matrices.dir\tests\TestFraccion_13-07-2024.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Matrices.dir/tests/TestFraccion_13-07-2024.cpp.i"
-	C:\PROGRA~2\MICROS~4\2019\BUILDT~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\Matrices.dir\tests\TestFraccion_13-07-2024.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Uli Rodriguez\OneDrive\Documentos\2024\Matrices\tests\TestFraccion_13-07-2024.cpp"
+CMakeFiles\Matrices.dir\tests\StringUtils_14-07-2024.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Matrices.dir/tests/StringUtils_14-07-2024.cpp.i"
+	C:\PROGRA~2\MICROS~4\2019\BUILDT~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\Matrices.dir\tests\StringUtils_14-07-2024.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Uli Rodriguez\OneDrive\Documentos\2024\Matrices\tests\StringUtils_14-07-2024.cpp"
 <<
 
-CMakeFiles\Matrices.dir\tests\TestFraccion_13-07-2024.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Matrices.dir/tests/TestFraccion_13-07-2024.cpp.s"
+CMakeFiles\Matrices.dir\tests\StringUtils_14-07-2024.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Matrices.dir/tests/StringUtils_14-07-2024.cpp.s"
 	C:\PROGRA~2\MICROS~4\2019\BUILDT~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Matrices.dir\tests\TestFraccion_13-07-2024.cpp.s /c "C:\Users\Uli Rodriguez\OneDrive\Documentos\2024\Matrices\tests\TestFraccion_13-07-2024.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Matrices.dir\tests\StringUtils_14-07-2024.cpp.s /c "C:\Users\Uli Rodriguez\OneDrive\Documentos\2024\Matrices\tests\StringUtils_14-07-2024.cpp"
 <<
 
 # Object files for target Matrices
@@ -143,7 +143,7 @@ Matrices_OBJECTS = \
 "CMakeFiles\Matrices.dir\src\Fraccion.cpp.obj" \
 "CMakeFiles\Matrices.dir\src\Matriz.cpp.obj" \
 "CMakeFiles\Matrices.dir\src\StringUtils.cpp.obj" \
-"CMakeFiles\Matrices.dir\tests\TestFraccion_13-07-2024.cpp.obj"
+"CMakeFiles\Matrices.dir\tests\StringUtils_14-07-2024.cpp.obj"
 
 # External object files for target Matrices
 Matrices_EXTERNAL_OBJECTS =
@@ -151,7 +151,7 @@ Matrices_EXTERNAL_OBJECTS =
 Matrices.exe: CMakeFiles\Matrices.dir\src\Fraccion.cpp.obj
 Matrices.exe: CMakeFiles\Matrices.dir\src\Matriz.cpp.obj
 Matrices.exe: CMakeFiles\Matrices.dir\src\StringUtils.cpp.obj
-Matrices.exe: CMakeFiles\Matrices.dir\tests\TestFraccion_13-07-2024.cpp.obj
+Matrices.exe: CMakeFiles\Matrices.dir\tests\StringUtils_14-07-2024.cpp.obj
 Matrices.exe: CMakeFiles\Matrices.dir\build.make
 Matrices.exe: CMakeFiles\Matrices.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Uli Rodriguez\OneDrive\Documentos\2024\Matrices\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Matrices.exe"

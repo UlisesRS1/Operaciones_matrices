@@ -10,7 +10,7 @@
  */
 
 #include "utils/StringUtils.h"
-#include <sstream> // Para std::istringstream
+#include <sstream>
 
 std::vector<std::string> StringUtils::split(const std::string& cadena, char caracter) {
     std::vector<std::string> tokens;
@@ -22,4 +22,16 @@ std::vector<std::string> StringUtils::split(const std::string& cadena, char cara
     }
 
     return tokens;
+}
+
+std::string StringUtils::strip(const std::string& cadena){
+    std::string resultado;
+    
+    for (char c : cadena) {
+        if (!isspace(c) && c != '\t') {
+            resultado += c;
+        }
+    }
+
+    return resultado;
 }

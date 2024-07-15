@@ -26,6 +26,14 @@ public:
      * @return std::vector<std::string> 
      */
     static std::vector<std::string> split(const std::string& cadena, char caracter);
+
+    /**
+     * @brief Eliminara todos los espacios en blanco, como lo son " " o "\t".
+     * 
+     * @param cadena String de la cadena a eliminar espacios
+     * @return std::string String sin espacios
+     */
+    static std::string strip(const std::string& cadena);
 };
 
 #endif STRINGUTILS_H

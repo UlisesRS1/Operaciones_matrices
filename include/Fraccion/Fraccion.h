@@ -90,6 +90,13 @@ public:
     Fraccion();
 
     /**
+     * @brief Construct de un nuevo objeto Fraccion con solo el numerador
+     * 
+     * @param numerador Siguiendo el formato x/y, este param seria igual a x 
+     */
+    Fraccion(int numerador);
+
+    /**
      * @brief Constructor de un nuevo objeto Fraccion con numerador y denominador
      * @details Recibe tanto el numerado como el denominador
      * @param numerador Siguiendo el formato x/y, este param es igual a x
